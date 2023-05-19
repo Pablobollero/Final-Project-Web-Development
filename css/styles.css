@@ -16,8 +16,6 @@ html {
     background-repeat: no-repeat;
     min-height: 100vh;
     min-width: 100vw;
-    /* width: 384px;
-    height: 854px; */
     display: grid;
     grid-template-areas: 
     'header'
@@ -123,13 +121,15 @@ input[type='checkbox'] {
 
 .collapsible-content {
     max-height: 0px;
+    width: 100vw;
+    position: fixed;
     overflow: hidden;
     text-align: center;
     transition: max-height .50s ease-in-out;
 }
 
 .toggle:checked+.lbl-toggle+.collapsible-content {
-    max-height: 350px;
+    max-height: 180px;
     overflow: hidden;
 }
 
@@ -172,14 +172,14 @@ a:active {
 #mainIndex {
     grid-area: main;
     display: grid;
-    height: 427px;
+    margin-top: 15rem;
     text-align: center;
     justify-content: center;
     }
 
 #mainIndex>h2 {
     color: rgb(236, 236, 236);
-    margin-top: -1rem;
+    margin-bottom: 6rem;
     font-size: 3rem;
     letter-spacing: 1.5rem;
 }
@@ -187,7 +187,7 @@ a:active {
 #mainIndex>p {
     color: white;
     padding: 0.3rem;
-    margin-bottom: 16rem;
+    margin-bottom: 14rem;
     font-size: 1.25rem;
     letter-spacing: 0.34em;
 }
@@ -197,8 +197,13 @@ a:active {
 #footer {
     grid-area: footer;
     text-align: center;
+    width: 100vw;
     color:whitesmoke;
     font-size: 0.9em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: end;
 }
 
 .footerContainer {
@@ -214,7 +219,6 @@ a:active {
 
 .linkFooter {
     width: 3rem;
-    margin-bottom: 0.95rem;
 }
 
 .linkFooter2 {
