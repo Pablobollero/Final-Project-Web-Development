@@ -188,11 +188,35 @@ a:active {
     letter-spacing: 1.5rem;
 }
 
+@media (max-width: 360px) {
+    #mainIndex {
+    margin-top: 16rem;
+    }
+    #mainIndex>h2 {
+        color: rgb(236, 236, 236);
+        justify-content: center;
+        height: 8rem;
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 3rem;
+        letter-spacing: 1.5rem;
+    }       
+}
+
 #mainIndex>p {
     color: white;
     margin-bottom: 14rem;
     font-size: 1.25rem;
     letter-spacing: 0.34em;
+}
+
+@media (max-width: 360px) {
+    #mainIndex>p {
+        color: white;
+        margin-bottom: 12rem;
+        font-size: 1rem;
+        letter-spacing: 0.34em;
+    }
 }
 
 /*FOOTER SETUP*/
