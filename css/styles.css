@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Audiowide', cursive;
+    overflow-x: hidden;
+}
+
+#body {
+    background-image: url(../img/background/pxfuel.jpg);
+    background-position-x: 65%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    /* width: 384px;
+    height: 854px; */
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer';
+    grid-template-rows: 40% 48% 12%;
+}
+
+/*----------HEADER SETUP----------*/
+
+#header {
+    grid-area: header;
+}
+
+/*COLLAPSIBLE MENU MESSAGE*/
+
+.menuMessage {
+    color: orange;
+    display: flex;
+    width: 7rem;
+    flex-direction: column;
+    margin-left: 10rem;
+    margin-top: 1.5rem;
+    letter-spacing: 0.1em;
+}
+
+.menuMessage .son1 {
+    font-size: 1.10rem;
+}
+
+.menuMessage .son2 {
+    color: orange;
+    font-size: 3.5rem;
+    margin-top: -1.5rem;
+    margin-left: 2rem;
+    transform: rotate(-15deg);
+}
+
+/*SPAN CONTAINER RETRACTIL LOGO*/
+
+h3 {
+    font-size: 4rem;
+    text-align: center;
+    margin-top: -7rem;
+}
+
+h3 span {
+    display: inline-flex;
+    color: whitesmoke;    
+    margin: 6rem 0 0 0;
+}
+
+h3 span:nth-child(even)
+{
+    overflow: hidden;
+    transition: ease-in-out 0.5s;
+    letter-spacing: -1em;
+}
+
+/*HOVER RETRACTIL LOGO*/
+
+h3:hover span:nth-child(even) {
+    letter-spacing: 0;
+    transition-delay: 0s;
+}
+
+/*WORDS LOGO*/
+
+.letterP {
+    font-size: 3rem;
+    font-weight: 100px;
+}
+
+.wordAblo {
+    font-size: 1.5rem;
+    font-weight: 50px;
+}
+
+.middleSymbols {
+    font-size: 3rem;
+    font-weight: 100px;
+}
+
+.letterB {
+    font-size: 3rem;
+    font-weight: 100px;
+}
+
+.wordOllero {
+    font-size: 1.5rem;
+    font-weight: 50px;
+}
+
+/*COLLAPSIBLE MENU*/
+
+input[type='checkbox'] {
+    display: none;
+}
+
+.lbl-toggle {
+    cursor: pointer;
+}
+
+.collapsible-content {
+    max-height: 0px;
+    overflow: hidden;
+    text-align: center;
+    transition: max-height .50s ease-in-out;
+}
+
+.toggle:checked+.lbl-toggle+.collapsible-content {
+    max-height: 350px;
+    overflow: hidden;
+}
+
+.collapsible-content li {
+    margin-block: 3rem;
+    list-style: none;
+    text-shadow: 0 0 5px white, 0 0 10px white;
+}
+
+.collapsible-content a {
+    text-decoration: none;
+    letter-spacing: 0.5em;
+}
+
+/*HOVER*/
+
+ /* unvisited link */
+a:link {
+    color: whitesmoke;
+    /* text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px white, 0 0 25px white, 0 0 30px white, 0 0 35px white, 0 0 40px white, 0 0 50px white; */
+}
+
+  /* visited link */
+a:visited {
+    color:whitesmoke;
+}
+
+  /* mouse over link */
+a:hover {
+    color: whitesmoke;
+}
+
+  /* selected link */
+a:active {
+    color: whitesmoke;
+}
+
+/*----------MAIN SETUP----------*/
+
+#mainIndex {
+    grid-area: main;
+    display: grid;
+    height: 427px;
+    text-align: center;
+    justify-content: center;
+    }
+
+#mainIndex>h2 {
+    color: rgb(236, 236, 236);
+    margin-top: -1rem;
+    font-size: 3rem;
+    letter-spacing: 1.5rem;
+}
+
+#mainIndex>p {
+    color: white;
+    padding: 0.3rem;
+    margin-bottom: 16rem;
+    font-size: 1.25rem;
+    letter-spacing: 0.34em;
+}
+
+/*FOOTER SETUP*/
+
+#footer {
+    grid-area: footer;
+    text-align: center;
+    color:whitesmoke;
+    font-size: 0.9em;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.listFooter>li {
+    display: inline-block;
+}
+
+.linkFooter {
+    width: 3rem;
+    margin-bottom: 0.95rem;
+}
+
+.linkFooter2 {
+    width: 5rem;
+}
+
+#footer .nameSurname { 
+    font-size: 1.2em;
+    text-align: center;
+    letter-spacing: 0.3em;
+}
