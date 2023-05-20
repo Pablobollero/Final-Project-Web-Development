@@ -105,12 +105,12 @@ input[type='checkbox'] {
 }
 
 .toggle:checked+.lbl-toggle+.collapsible-content {
-    max-height: 120px;
+    max-height: 13.5rem;
     overflow: hidden;
 }
 
 .collapsible-content li {
-    margin-block: 1.5rem;
+    margin-block: 2rem;
     list-style: none;
     text-shadow: 0 0 5px white, 0 0 10px white;
 }
@@ -119,16 +119,6 @@ input[type='checkbox'] {
     text-decoration: none;
     letter-spacing: 0.5em;
     font-size: 1rem;
-    text-shadow: 0 0 5px rgb(255, 196, 0), 0 0 10px rgb(255, 196, 0);
-    animation: animate 1.5s linear infinite;
-}
-
-@keyframes animate {
-    0% {filter: hue-rotate(0deg);
-    }
-    100% {
-        filter: hue-rotate(360deg);
-    }
 }
 
 /*HOVER*/
@@ -169,7 +159,7 @@ a:active {
     color: rgb(236, 236, 236);
     justify-content: center;
     text-align: center;
-    margin: 5rem 1rem 3rem 1rem;
+    margin: 8rem 1rem 3rem 1rem;
     font-size: 2.25rem;
     letter-spacing: 1.25rem;
 }
@@ -229,4 +219,14 @@ a:active {
     font-size: 1.2em;
     text-align: center;
     letter-spacing: 0.3em;
+    text-shadow: 0 0 5px rgb(255, 196, 0), 0 0 10px rgb(255, 196, 0);
+    animation: animate 1.5s linear infinite;
+}
+
+@keyframes animate {
+    0% {filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
 }
