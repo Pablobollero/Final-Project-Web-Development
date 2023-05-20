@@ -28,6 +28,7 @@ html {
 
 #header {
     grid-area: header;
+    display: block;
 }
 
 /*COLLAPSIBLE MENU MESSAGE*/
@@ -35,37 +36,36 @@ html {
 .menuMessage {
     color: orange;
     display: flex;
-    width: 7rem;
     flex-direction: column;
-    margin-left: 9rem;
-    margin-top: 3rem;
+    margin-top: 2.5rem;
     letter-spacing: 0.1em;
 }
 
 .menuMessage .son1 {
     font-size: 1rem;
+    width: 100vw;
+    text-align: center;
 }
 
 .menuMessage .son2 {
+    width: 100vw;
+    text-align: center;
     font-size: 2rem;
-    margin-top: -0.75rem;
-    margin-left: 6rem;
-    transform: rotate(-15deg);
+    margin-top: -0.50rem;
 }
 
 /*SPAN CONTAINER RETRACTIL LOGO*/
 
 h3 {
+    height: 3.5rem;
+    line-height: 3.5rem;
     font-size: 3rem;
     text-align: center;
-    margin-top: -7rem;
-    margin-left: -0.65rem;
 }
 
 h3 span {
     display: inline-flex;
-    color: whitesmoke;    
-    margin: 6rem 0 0 0;
+    color:white;
 }
 
 h3 span:nth-child(even)
@@ -94,11 +94,14 @@ input[type='checkbox'] {
 
 .collapsible-content {
     max-height: 0px;
-    width: 100vw;
     position: fixed;
     overflow: hidden;
-    text-align: center;
     transition: max-height .50s ease-in-out;
+}
+
+.content-inner {
+    width: 100vw;
+    text-align: center;
 }
 
 .toggle:checked+.lbl-toggle+.collapsible-content {
@@ -116,6 +119,16 @@ input[type='checkbox'] {
     text-decoration: none;
     letter-spacing: 0.5em;
     font-size: 1rem;
+    text-shadow: 0 0 5px rgb(255, 196, 0), 0 0 10px rgb(255, 196, 0);
+    animation: animate 1.5s linear infinite;
+}
+
+@keyframes animate {
+    0% {filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
 }
 
 /*HOVER*/
@@ -186,7 +199,7 @@ a:active {
     flex-direction: column;
     text-align: center;
     justify-content: end;
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
 }
 
 .footerContainer {
