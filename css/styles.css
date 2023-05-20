@@ -81,33 +81,6 @@ h3:hover span:nth-child(even) {
     transition-delay: 0s;
 }
 
-/*WORDS LOGO*/
-
-.letterP {
-    font-size: 3rem;
-    font-weight: 100px;
-}
-
-.wordAblo {
-    font-size: 1.5rem;
-    font-weight: 50px;
-}
-
-.middleSymbols {
-    font-size: 3rem;
-    font-weight: 100px;
-}
-
-.letterB {
-    font-size: 3rem;
-    font-weight: 100px;
-}
-
-.wordOllero {
-    font-size: 1.5rem;
-    font-weight: 50px;
-}
-
 /*COLLAPSIBLE MENU*/
 
 input[type='checkbox'] {
@@ -175,7 +148,7 @@ a:active {
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    margin-top: 8rem;
+    margin-top: 4rem;
 }
 
 #mainIndex>h2 {
@@ -183,7 +156,7 @@ a:active {
     justify-content: center;
     text-align: center;
     margin-top: 5rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
     font-size: 2.5rem;
     letter-spacing: 1.5rem;
 }
@@ -199,7 +172,6 @@ a:active {
 
 #footer {
     grid-area: footer;
-    text-align: center;
     width: 100vw;
     color:whitesmoke;
     font-size: 0.9em;
@@ -207,6 +179,7 @@ a:active {
     flex-direction: column;
     text-align: center;
     justify-content: end;
+    margin-bottom: 1.5rem;
 }
 
 .footerContainer {
