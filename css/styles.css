@@ -37,27 +37,26 @@ html {
     display: flex;
     width: 7rem;
     flex-direction: column;
-    margin-left: 10rem;
+    margin-left: 9rem;
     margin-top: 1.5rem;
     letter-spacing: 0.1em;
 }
 
 .menuMessage .son1 {
-    font-size: 1.10rem;
+    font-size: 1rem;
 }
 
 .menuMessage .son2 {
-    color: orange;
-    font-size: 3.5rem;
-    margin-top: -1.5rem;
-    margin-left: 2rem;
+    font-size: 2rem;
+    margin-top: -0.75rem;
+    margin-left: 6rem;
     transform: rotate(-15deg);
 }
 
 /*SPAN CONTAINER RETRACTIL LOGO*/
 
 h3 {
-    font-size: 4rem;
+    font-size: 2rem;
     text-align: center;
     margin-top: -7rem;
 }
@@ -129,12 +128,12 @@ input[type='checkbox'] {
 }
 
 .toggle:checked+.lbl-toggle+.collapsible-content {
-    max-height: 180px;
+    max-height: 120px;
     overflow: hidden;
 }
 
 .collapsible-content li {
-    margin-block: 3rem;
+    margin-block: 1.5rem;
     list-style: none;
     text-shadow: 0 0 5px white, 0 0 10px white;
 }
@@ -142,6 +141,7 @@ input[type='checkbox'] {
 .collapsible-content a {
     text-decoration: none;
     letter-spacing: 0.5em;
+    font-size: 1rem;
 }
 
 /*HOVER*/
@@ -181,42 +181,18 @@ a:active {
 #mainIndex>h2 {
     color: rgb(236, 236, 236);
     justify-content: center;
-    height: 8rem;
     text-align: center;
-    margin-bottom: 5rem;
-    font-size: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 2.5rem;
+    font-size: 2.5rem;
     letter-spacing: 1.5rem;
-}
-
-@media (max-width: 360px) {
-    #mainIndex {
-    margin-top: 16rem;
-    }
-    #mainIndex>h2 {
-        color: rgb(236, 236, 236);
-        justify-content: center;
-        height: 8rem;
-        text-align: center;
-        margin-bottom: 2rem;
-        font-size: 3rem;
-        letter-spacing: 1.5rem;
-    }       
 }
 
 #mainIndex>p {
     color: white;
-    margin-bottom: 14rem;
-    font-size: 1.25rem;
+    margin-bottom: 10rem;
+    font-size: 1rem;
     letter-spacing: 0.34em;
-}
-
-@media (max-width: 360px) {
-    #mainIndex>p {
-        color: white;
-        margin-bottom: 12rem;
-        font-size: 1rem;
-        letter-spacing: 0.34em;
-    }
 }
 
 /*FOOTER SETUP*/
@@ -237,7 +213,11 @@ a:active {
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
+.listFooter {
+    display: flex;
+    align-items: center;
 }
 
 .listFooter>li {
@@ -245,11 +225,11 @@ a:active {
 }
 
 .linkFooter {
-    width: 3rem;
+    width: 1.5rem;
 }
 
 .linkFooter2 {
-    width: 5rem;
+    width: 2.5rem;
 }
 
 #footer .nameSurname { 
