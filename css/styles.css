@@ -56,19 +56,19 @@ html {
 
 /*SPAN CONTAINER RETRACTIL LOGO*/
 
-h3 {
+h4 {
     height: 3.5rem;
     line-height: 3.5rem;
     font-size: 3rem;
     text-align: center;
 }
 
-h3 span {
+h4 span {
     display: inline-flex;
     color:white;
 }
 
-h3 span:nth-child(even)
+h4 span:nth-child(even)
 {
     overflow: hidden;
     transition: ease-in-out 0.5s;
@@ -77,7 +77,7 @@ h3 span:nth-child(even)
 
 /*HOVER RETRACTIL LOGO*/
 
-h3:hover span:nth-child(even) {
+h4:hover span:nth-child(even) {
     letter-spacing: 0;
     transition-delay: 0s;
 }
@@ -148,34 +148,35 @@ a:active {
 
 #mainIndex {
     grid-area: main;
-    display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    margin-top: 4rem;
+    margin-top: 12rem;
 }
 
 #mainIndex>h2 {
     color: rgb(236, 236, 236);
-    justify-content: center;
     text-align: center;
-    margin: 8rem 1rem 3rem 1rem;
+    margin: 1.5rem auto;
     font-size: 2.25rem;
     letter-spacing: 1.25rem;
 }
 
-#mainIndex>p {
+#mainIndex>h3 {
     color: rgb(236, 236, 236);
-    justify-content: center;
     text-align: center;
-    margin: 2rem 1rem 8rem 1rem;
+    margin: 1.5rem auto;
+    font-size: 2.25rem;
+    letter-spacing: 1rem;
+}
+
+#mainIndex>p {
+    width: 24rem;
+    color: rgb(236, 236, 236);
+    text-align: center;
+    margin: 3rem auto;
     font-size: 1rem;
     letter-spacing: 0.34rem;
-    /* color: white;
-    width: 35rem;
-    margin-bottom: 8rem;
-    font-size: 1rem;
-    letter-spacing: 0.34em; */
 }
 
 /*FOOTER SETUP*/
