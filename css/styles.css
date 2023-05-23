@@ -277,7 +277,7 @@ a:active {
     margin-top: 3rem;
 }
 
-#mainMywork h3 {
+#mainMywork h3, #mainSkills h3 {
     color:white;
     text-align: center;
     font-style: italic;
@@ -325,3 +325,28 @@ a:active {
 /*----------SKILLS----------*/
 
 /*SETUP*/
+
+#mainSkills {
+    color: white;
+    text-align: center;
+    margin: 8rem auto 5rem auto;
+}
+
+.row {
+    margin-top: 2.5rem;
+}
+
+.row h3 {
+    margin: 2rem auto;
+}
+
+.row img {
+    width: 20%;
+}
+
+.row p {
+    width: 50%;
+    font-size: 0.75rem;
+    margin: 0 auto;
+    letter-spacing: 0.05rem;
+}
