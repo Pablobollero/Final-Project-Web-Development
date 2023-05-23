@@ -244,7 +244,7 @@ a:active {
 
 /*MAIN SETUP*/
 
-#mainAboutme, #mainMywork {
+#mainAboutme {
     margin-top: 10.5rem;
 }
 
@@ -273,6 +273,10 @@ a:active {
 
 /*MAIN SETUP*/
 
+#mainMywork {
+    margin-top: 3rem;
+}
+
 #mainMywork h3 {
     color:white;
     text-align: center;
@@ -287,8 +291,7 @@ a:active {
     align-items: center;
     gap: 1rem;
     max-width: 100vw;
-    margin: 0 auto;
-    padding: 1rem 1rem;
+    margin: 0 auto 10rem auto;
 }
 
 .gallery figure, .gallery figcaption, .gallery img {
@@ -319,4 +322,6 @@ a:active {
     width: 35rem;
 }
 
+/*----------SKILLS----------*/
 
+/*SETUP*/
