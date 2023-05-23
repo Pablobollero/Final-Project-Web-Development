@@ -248,16 +248,16 @@ a:active {
     margin-top: 10.5rem;
 }
 
-#mainAboutme h2, #mainAboutme p, #mainMywork h2, #mainMywork p {
+#mainAboutme h2, #mainAboutme p, #mainMywork h2, #mainMywork p, #mainSkills h2, #mainSkills p, #mainContact p, #mainContact h2 {
     text-align: center;
     width: 75vw;
-    margin: 2rem auto;
+    margin: 3rem auto;
 }
 
-#mainAboutme h2, #mainMywork h2 {
+#mainAboutme h2, #mainMywork h2, #mainSkills h2, #mainContact h2 {
     color: orange;
     letter-spacing: 0.50rem;
-    font-size: 1.7rem;
+    font-size: 1.90rem;
     width: 100vw;
     text-align: center;
 }
@@ -330,7 +330,7 @@ a:active {
 #mainSkills {
     color: white;
     text-align: center;
-    margin: 8rem auto 5rem auto;
+    margin: 7rem auto 5rem auto;
 }
 
 .row {
@@ -345,9 +345,101 @@ a:active {
     width: 20%;
 }
 
-.row p {
+.row p, #mainContact p {
     width: 100%;
     font-size: 0.89rem;
     margin: 0 auto;
     letter-spacing: 0.05rem;
+}
+
+/*----------CONTACT----------*/
+
+#mainContact {
+    color: white;
+    text-align: center;
+    margin: 8rem auto 5rem auto;
+}
+
+#mainContact p {
+    font-size: 1.25rem;
+}
+
+form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #3b3b4f;
+}
+
+fieldset:last-of-type {
+    border-bottom: none;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+}
+
+input,
+textarea {
+    background-color: white;
+    border: 1px solid black;
+    color: #ffffff;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+input[type="submit"] {
+    font-family: 'Audiowide', cursive;
+    width: 25%;
+    font-size: 1.4rem;
+    color: #fff;
+    background: linear-gradient(90deg, #000000 0%, #ffffff 100%);
+    padding: 1rem 3rem;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.2) 0rem 1.2rem 2.8rem 0rem, rgba(0, 0, 0, 0.1) 0rem 0.2rem 0.4rem 0rem, rgba(255, 255, 255, 0.05) 0rem 0rem 0rem 0.1rem inset;
+    border-radius: 5rem;
+    transition: 1000ms;
+    transform: translateY(0);
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+input[type="submit"]:hover{
+    transition : 1000ms;
+    padding: 1rem 5rem;
+    transform : translateY(-0px);
+    background: linear-gradient(90deg, #000000 0%, #ffffff 100%);
+    color: black;
+    border: solid 0.2rem #828282;
+
+input[type="file"] {
+    padding: 1px 2px;
+}
+
+a {
+    color: #dfdfe2;
 }
