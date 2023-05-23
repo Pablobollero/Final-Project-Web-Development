@@ -106,7 +106,7 @@ input[type='checkbox'] {
 }
 
 .toggle:checked+.lbl-toggle+.collapsible-content {
-    max-height: 14rem;
+    max-height: 16rem;
     overflow: hidden;
 }
 
@@ -279,6 +279,7 @@ a:active {
 
 #mainMywork h3, #mainSkills h3 {
     color:white;
+    font-size: 1.2rem;
     text-align: center;
     font-style: italic;
 }
@@ -345,8 +346,8 @@ a:active {
 }
 
 .row p {
-    width: 50%;
-    font-size: 0.75rem;
+    width: 100%;
+    font-size: 0.89rem;
     margin: 0 auto;
     letter-spacing: 0.05rem;
 }
