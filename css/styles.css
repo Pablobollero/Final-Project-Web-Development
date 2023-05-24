@@ -203,7 +203,11 @@ a:active {
 
 .listFooter {
     display: flex;
+    margin: 0 auto;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
 }
 
 .listFooter>li {
@@ -435,6 +439,7 @@ input[type="submit"]:hover{
     background: linear-gradient(90deg, #000000 0%, #ffffff 100%);
     color: black;
     border: solid 0.2rem #828282;
+}
 
 input[type="file"] {
     padding: 1px 2px;
