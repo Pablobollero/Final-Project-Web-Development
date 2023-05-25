@@ -68,6 +68,7 @@ h4 {
 h4 span {
     display: inline-flex;
     color:white;
+    margin-top: 2rem;
 }
 
 h4 span:nth-child(even) {
@@ -246,10 +247,24 @@ a:active {
     margin-top: 2rem;
 }
 
+#body .homePageContainer {
+    margin: 1.5rem 0 0 48%;
+    position: fixed;
+}
+
+#body #homePage {
+    width: 2rem;
+}
+
 /*MAIN SETUP*/
 
 #mainAboutme {
-    margin-top: 10.5rem;
+    margin-top: 9rem;
+}
+
+#mainAboutme p a {
+    color: orange;
+    text-decoration: none;
 }
 
 #mainAboutme h2, #mainAboutme p, #mainMywork h2, #mainMywork p, #mainSkills h2, #mainSkills p, #mainContact p, #mainContact h2 {
@@ -268,7 +283,6 @@ a:active {
 
 #mainAboutme p, #mainMywork p {
     color: white;
-    font-family: serif;
     letter-spacing: 0.2rem;
     font-size: 1rem;
 }
