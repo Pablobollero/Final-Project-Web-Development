@@ -68,7 +68,6 @@ h4 {
 h4 span {
     display: inline-flex;
     color:white;
-    margin-top: 2rem;
 }
 
 h4 span:nth-child(even) {
@@ -248,7 +247,7 @@ a:active {
 }
 
 #body .homePageContainer {
-    margin: 1.5rem 0 0 48%;
+    margin: 1.5rem 0 0 90%;
     position: fixed;
 }
 
