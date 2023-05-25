@@ -277,7 +277,7 @@ a:active {
 }
 
 #body .homePageContainer {
-    margin: 4rem 0 0 85%;
+    margin: 2.85rem 0 0 90%;
     position: fixed;
     display: flex;
     justify-content: center;
@@ -293,7 +293,7 @@ a:active {
 
 @media only screen and (min-width: 576px) {
     #body .homePageContainer {
-        margin: 2rem 0 0 25%;
+        margin: 2.25rem 0 0 20%;
         box-shadow:  0 0 2rem white, 0 0 2.5rem white;
     }
     #body #homePage {
@@ -310,7 +310,7 @@ a:active {
         width: 3rem;
     }
     #body h4 {
-        margin-top: 3rem;
+        margin-top: -1rem;
     }
 }
 
@@ -398,9 +398,6 @@ a:active {
     #mainMywork h3 {
         font-size: 1.5rem;
         margin: 5rem auto;
-    }
-    #mainMywork {
-        margin-top: 9rem;
     }
 }
 .gallery figure, .gallery figcaption, .gallery img {
