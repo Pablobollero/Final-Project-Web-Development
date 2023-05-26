@@ -502,12 +502,27 @@ a:active {
     }
 }
 
+
+
 @media only screen and (min-width: 1200px) {
-    #mainContact {
+    #mainSkills, #mainMywork {
         color: white;
         text-align: center;
-        margin: 5rem auto 5rem auto;
+        margin: 10rem auto 5rem auto;
     }
+    #mainAboutme {
+        color: white;
+        text-align: center;
+        margin: 12rem auto 5rem auto;
+    }
+    #mainContact {
+        color: white;
+        display: block;
+        margin: 4rem auto;
+        flex-direction: column;
+    }
+}
+@media only screen and (min-width: 1200px) {
     form {
         width: 60vw;
         display: flex;
@@ -515,23 +530,7 @@ a:active {
         margin-block: 1rem auto;
     }
     fieldset {
-        margin-inline: 1rem;}
-}
-}
-
-@media only screen and (min-width: 1200px) {
-    #mainAboutme, #mainSkills, #mainMywork {
-        color: white;
-        text-align: center;
-        margin: 15rem auto 5rem auto;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    #mainMywork {
-        color: white;
-        text-align: center;
-        margin: 10rem auto 5rem auto;
+        letter-spacing: 0.25rem;
     }
 }
 
@@ -631,13 +630,19 @@ input[type="submit"] {
     margin: 0 auto;
 }
 
-input[type="submit"]:hover{
+input[type="submit"]:hover {
     transition : 1000ms;
     padding: 1rem 5rem;
     transform : translateY(-0px);
     background: linear-gradient(90deg, #000000 0%, #ffffff 100%);
     color: black;
     border: solid 0.2rem #828282;
+}
+
+@media only screen and (min-width: 1200px) {
+    input[type="submit"]:hover {
+    padding: 1rem 5rem;
+    }
 }
 
 input[type="file"] {
