@@ -211,6 +211,12 @@ a:active {
     }
 }
 
+@media only screen and (min-width: 1200px) {
+    #mainAboutme h2, #mainMywork h2 {
+        margin: 8rem auto 2.5rem auto;
+    }
+}
+
 /*FOOTER SETUP*/
 
 #footer {
@@ -303,9 +309,6 @@ a:active {
     }
     #body #homePage {
         width: 3rem;
-    }
-    #body h4 {
-        margin-top: -1rem;
     }
 }
 
@@ -500,10 +503,35 @@ a:active {
 }
 
 @media only screen and (min-width: 1200px) {
-    #mainAboutme, #mainSkills, #mainMywork, #mainContact {
+    #mainContact {
+        color: white;
+        text-align: center;
+        margin: 5rem auto 5rem auto;
+    }
+    form {
+        width: 60vw;
+        display: flex;
+        flex-direction: column;
+        margin-block: 1rem auto;
+    }
+    fieldset {
+        margin-inline: 1rem;}
+}
+}
+
+@media only screen and (min-width: 1200px) {
+    #mainAboutme, #mainSkills, #mainMywork {
         color: white;
         text-align: center;
         margin: 15rem auto 5rem auto;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #mainMywork {
+        color: white;
+        text-align: center;
+        margin: 10rem auto 5rem auto;
     }
 }
 
