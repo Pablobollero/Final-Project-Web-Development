@@ -5,13 +5,13 @@
 
 html {
     font-size: 62.5%;
-    overflow-x: hidden;
 }
 
 #body {
     font-family: 'Audiowide', cursive;
     background-image: url(../img/background/pxfuel.jpg);
-    background-position-x: 58%;
+    background-position-x: 60%;
+    overflow-x: hidden;
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
@@ -282,9 +282,6 @@ a:active {
     display: flex;
     justify-content: center;
     align-content: center;
-    background-color: black;
-    box-shadow:  0 0 2rem white, 0 0 2.5rem white, 0 0 5rem white;
-    border-radius: 2rem;
 }
 
 #body #homePage {
@@ -293,8 +290,7 @@ a:active {
 
 @media only screen and (min-width: 576px) {
     #body .homePageContainer {
-        margin: 2.25rem 0 0 20%;
-        box-shadow:  0 0 2rem white, 0 0 2.5rem white;
+        margin: 2.25rem 0 0 10%;
     }
     #body #homePage {
         width: 3rem;
@@ -304,7 +300,6 @@ a:active {
 @media only screen and (min-width: 1200px) {
     #body .homePageContainer {
         margin: 3rem 0 0 25%;
-        box-shadow:  0 0 2rem white, 0 0 2.5rem white;
     }
     #body #homePage {
         width: 3rem;
@@ -331,7 +326,7 @@ a:active {
     text-decoration: none;
 }
 
-#mainAboutme h2, #mainAboutme p, #mainMywork h2, #mainMywork p, #mainSkills h2, #mainSkills p, #mainContact p, #mainContact h2 {
+#mainAboutme h2, #mainAboutme p, #mainMywork h2, #mainMywork p, #mainSkills h2, #mainSkills p, #mainContact p {
     text-align: center;
     width: 75vw;
     margin: 3rem auto;
@@ -492,8 +487,16 @@ a:active {
 
 #mainContact {
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin: 8rem auto 5rem auto;
+}
+@media only screen and (min-width: 768px) {
+    #mainContact {
+    margin: 5rem auto 5rem auto;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -504,9 +507,14 @@ a:active {
     }
 }
 
+#mainContact h2 {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+
 #mainContact p {
     font-size: 1.05rem;
-    width: 40rem;
+    width: 30rem;
 }
 
 @media only screen and (min-width: 576px) {
@@ -516,9 +524,13 @@ a:active {
         font-size: 1.25rem;
         margin: 0 auto;
     }
-    #mainContact h2, #mainSkills h2, #mainMywork h2, #mainAboutme h2 {
+    #mainSkills h2, #mainMywork h2, #mainAboutme h2 {
         font-size: 2.5rem;
         margin-top: 1rem;
+    }
+    #mainContact h2 {
+        font-size: 2.5rem;
+        margin-top: 6rem;
     }
 }
 
@@ -528,6 +540,17 @@ form {
     min-width: 300px;
     margin: 0 auto;
     padding-bottom: 2em;
+}
+
+@media only screen and (min-width: 768px) {
+    form {
+        width: 60vw;
+        display: flex;
+        flex-direction: column;
+        margin-block: 1rem auto;
+    }
+    fieldset {
+        margin-inline: 4rem;}
 }
 
 fieldset {
@@ -549,7 +572,7 @@ input,
 textarea,
 select {
     margin: 10px 0 0 0;
-    width: 100%;
+    width: 75%;
     min-height: 2em;
 }
 
@@ -558,12 +581,6 @@ textarea {
     background-color: white;
     border: 1px solid black;
     color: #ffffff;
-}
-
-.inline {
-    width: unset;
-    margin: 0 0.5em 0 0;
-    vertical-align: middle;
 }
 
 input[type="submit"] {
