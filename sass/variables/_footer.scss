@@ -1,0 +1,65 @@
+#footer {
+    grid-area: footer;
+    width: 100vw;
+    color:whitesmoke;
+    font-size: 0.9em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: end;
+    margin-bottom: 2rem;
+    @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
+        font-size: 1.25rem;
+    }
+    .footerContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .listFooter {
+            display: flex;
+            margin: 0 auto;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0;
+            li {
+                display: inline-block;
+                .linkFooter {
+                    width: 1.5rem;
+                    @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
+                        width: 2.5rem;
+                    }
+                }
+                .linkFooter2 {
+                    width: 2.5rem;
+                    @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
+                        width: 4rem;
+                    }
+                }
+            }
+        }
+    }
+    .nameSurname {
+        font-size: 0.9rem;
+        text-align: center;
+        letter-spacing: 0.3em;
+        text-shadow: 0 0 5px rgb(255, 196, 0), 0 0 10px rgb(255, 196, 0);
+        animation: animate 1.5s linear infinite;
+        @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
+            font-size: 1.3rem;
+        }
+    }
+    @keyframes animate {
+        0% {filter: hue-rotate(0deg);
+        }
+        100% {
+            filter: hue-rotate(360deg);
+        }
+    }
+}
+
+
+
+
+
+

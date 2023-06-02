@@ -1,0 +1,53 @@
+#mainIndex {
+    grid-area: main;
+    width: 100vw;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 7rem auto;
+    #proffession {
+        display: flex;
+        color: rgb(236, 236, 236);
+        text-align: center;
+        justify-content: center;
+        font-size: 2.25rem;
+        letter-spacing: 1.20rem;
+        @media only screen and (min-device-width: 576px) and (max-device-width: 768px)  {
+            font-size: 2rem;
+        }
+        @media only screen and (min-device-width: 769px) and (max-device-width: 1024px)  {
+            font-size: 2.50rem;
+        }
+        @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px)  {
+            font-size: 2.75rem;
+        }
+        @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
+            font-size: 4rem;
+        }
+    }
+    p {
+        display: inline-block;
+        width: 22rem;
+        color:  rgb(236, 236, 236);
+        text-align: center;
+        margin: 0 auto;
+        font-size: 1rem;
+        letter-spacing: 0.28rem;
+        @media only screen and (min-device-width: 576px) and (max-device-width: 768px)  {
+            font-size: 1.25rem;
+            width: 55%;
+        }
+        @media only screen and (min-device-width: 769px) and (max-device-width: 1024px)  {
+            font-size: 1.30rem;
+            width: 40%;
+        }
+        @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px)  {
+            font-size: 1.20rem;
+            width: 35%;
+        }
+        @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
+            font-size: 1.75rem;
+            width: 30%;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+#mainAboutme {
+    grid-area: main;
+    display: block;
+    p {
+        color: white;
+        letter-spacing: 0.2rem;
+        font-size: 1rem;
+        text-align: center;
+        width: 75vw;
+        margin: 3rem auto;
+        background-color: rgba(black, 0.3);
+        @media only screen and (min-device-width: 576px) and (max-device-width: 768px)  {
+            font-size: 0.95rem;
+        }
+        @media only screen and (min-device-width: 769px) and (max-device-width: 1024px)  {
+            font-size: 1rem;
+        }
+        @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px)  {
+            font-size: 1.25rem;
+        }
+        @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
+            font-size: 1.50rem;
+        } 
+        a {
+            color: orange;
+            text-decoration: none;
+            transition: font-size 1s;
+            &:hover {
+                font-size: 3rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+#bodyIndex {
+    font-family: 'Audiowide', cursive;
+    background-image: url(../img/background/pxfuel.jpg);
+    background-position-x: 60%;
+    overflow-x: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-areas:
+    'header'
+    'main'
+    'footer';
+    grid-template-rows: 20% 60% 20%;
+}

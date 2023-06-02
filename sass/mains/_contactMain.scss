@@ -1,0 +1,107 @@
+#mainContact {
+    grid-area: main;
+    color: white;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: -4rem auto;
+    p {
+        font-size: 1.05rem;
+        width: 65%;
+        margin: 1.5rem auto;
+        @media only screen and (min-device-width: 576px) and (max-device-width: 768px)  {
+            font-size: 1.25rem;
+            width: 55%;
+        }
+        @media only screen and (min-device-width: 769px) and (max-device-width: 1024px)  {
+            font-size: 1.30rem;
+            width: 45%;
+        }
+        @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px)  {
+            font-size: 1.20rem;
+            width: 38%;
+        }
+        @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
+            font-size: 1.75rem;
+            width: 35%;
+        }
+    }
+    form {
+        width: 60vw;
+        max-width: 390px;
+        min-width: 300px;
+        margin: 3rem auto;
+        padding-bottom: 2em;
+        background-color: rgba(black, 0.3);
+        fieldset {
+            border: none;
+            padding: 2rem 0;
+            border-bottom: 3px solid #3b3b4f;
+            label {
+                display: block;
+                margin: 0.5rem 0;
+                font-size: 0.85rem;
+                @media only screen and (min-device-width: 576px) and (max-device-width: 768px)  {
+                    font-size: 0.95rem;
+                }
+                @media only screen and (min-device-width: 769px) and (max-device-width: 1024px)  {
+                    font-size: 1rem;
+                }
+                @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px)  {
+                    font-size: 1.10rem;
+                }
+                @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
+                    font-size: 1.20rem;
+                }
+                // color: orange;
+            }
+        }
+        fieldset:last-of-type {
+            border-bottom: none;
+        }
+        input[type="submit"] {
+            font-family: 'Audiowide', cursive;
+            width: 20%;
+            font-size: 1.4rem;
+            color: #fff;
+            background: linear-gradient(90deg, #000000 0%, #ffffff 100%);
+            padding: 1rem 1rem;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.2) 0rem 1.2rem 2.8rem 0rem, rgba(0, 0, 0, 0.1) 0rem 0.2rem 0.4rem 0rem, rgba(255, 255, 255, 0.05) 0rem 0rem 0rem 0.1rem inset;
+            border-radius: 5rem;
+            transition: 2s;
+            transform: translateY(0);
+            display: flex;
+            text-align: center;
+            flex-direction: row;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 auto;
+            &:hover {
+                transition : 2s;
+                padding: 1rem 4.5rem;
+                transform : translateY(-0px);
+                background: linear-gradient(90deg, #000000 0%, #ffffff 100%);
+                color: black;
+                border: solid 0.2rem #828282;
+            }
+        }
+    }
+}
+
+input, textarea, select {
+    margin: 10px 0 0 0;
+    width: 75%;
+    min-height: 2em;
+    background-color: white;
+    border: 1px solid black;
+    font-weight: 600;
+}
+
+
+
+// probar filter
