@@ -47,6 +47,11 @@ html {
   justify-content: baseline;
   align-items: center;
 }
+@media only screen and (min-device-width: 320px) and (max-device-width: 425px) {
+  #header .homePageContainer {
+    margin-left: 46vw;
+  }
+}
 @media only screen and (min-device-width: 576px) and (max-device-width: 768px) {
   #header .homePageContainer {
     margin-left: 47.2vw;
