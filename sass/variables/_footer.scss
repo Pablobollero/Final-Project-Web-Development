@@ -11,6 +11,9 @@
     @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
         font-size: 1.25rem;
     }
+    @media only screen and (min-device-width: 2560px) and (max-device-width: 2870px)  {
+        font-size: 2rem;
+    }
     .footerContainer {
         display: flex;
         justify-content: center;
@@ -29,11 +32,17 @@
                     @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
                         width: 2.5rem;
                     }
+                    @media only screen and (min-device-width: 2560px) and (max-device-width: 2870px)  {
+                        width: 3.5rem;
+                    }
                 }
                 .linkFooter2 {
                     width: 2.5rem;
                     @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
                         width: 4rem;
+                    }
+                    @media only screen and (min-device-width: 2560px) and (max-device-width: 2870px)  {
+                        width: 5.75rem;
                     }
                 }
             }
@@ -47,6 +56,9 @@
         animation: animate 1.5s linear infinite;
         @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
             font-size: 1.3rem;
+        }
+        @media only screen and (min-device-width: 2560px) and (max-device-width: 2870px)  {
+            font-size: 1.65rem;
         }
     }
     @keyframes animate {

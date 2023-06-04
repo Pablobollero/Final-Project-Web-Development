@@ -69,7 +69,7 @@ html {
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
   #header .homePageContainer {
-    margin-left: 48.7vw;
+    margin-left: 48.8vw;
   }
 }
 #header .homePageContainer #homePage {
@@ -96,11 +96,8 @@ html {
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
   #header .homePageContainer #homePage {
-    width: 4rem;
+    width: 3.55rem;
   }
-}
-#header .homePageContainer #homePage:hover {
-  width: 3rem;
 }
 #header .menuMessage {
   color: orange;
@@ -187,6 +184,12 @@ html {
   font-size: 1rem;
   transition: font-size 1s;
 }
+@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
+  #header .collapsible-content .content-inner li a {
+    font-size: 1.25rem;
+    margin-left: -0.05rem;
+  }
+}
 #header .collapsible-content .content-inner li a:link {
   color: whitesmoke;
 }
@@ -196,6 +199,11 @@ html {
 #header .collapsible-content .content-inner li a:hover {
   color: whitesmoke;
   font-size: 1.25rem;
+}
+@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
+  #header .collapsible-content .content-inner li a:hover {
+    font-size: 2rem;
+  }
 }
 #header .collapsible-content .content-inner li a:active {
   color: whitesmoke;
@@ -226,12 +234,13 @@ h2 {
 @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
   h2 {
     font-size: 2.75rem;
+    margin: 6rem auto;
   }
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
   h2 {
     font-size: 4rem;
-    margin: 5rem auto;
+    margin: 10rem auto 7rem auto;
   }
 }
 
@@ -680,6 +689,11 @@ input, textarea, select {
     font-size: 1.25rem;
   }
 }
+@media only screen and (min-device-width: 2560px) and (max-device-width: 2870px) {
+  #footer {
+    font-size: 2rem;
+  }
+}
 #footer .footerContainer {
   display: flex;
   justify-content: center;
@@ -704,12 +718,22 @@ input, textarea, select {
     width: 2.5rem;
   }
 }
+@media only screen and (min-device-width: 2560px) and (max-device-width: 2870px) {
+  #footer .footerContainer .listFooter li .linkFooter {
+    width: 3.5rem;
+  }
+}
 #footer .footerContainer .listFooter li .linkFooter2 {
   width: 2.5rem;
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
   #footer .footerContainer .listFooter li .linkFooter2 {
     width: 4rem;
+  }
+}
+@media only screen and (min-device-width: 2560px) and (max-device-width: 2870px) {
+  #footer .footerContainer .listFooter li .linkFooter2 {
+    width: 5.75rem;
   }
 }
 #footer .nameSurname {
@@ -722,6 +746,11 @@ input, textarea, select {
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
   #footer .nameSurname {
     font-size: 1.3rem;
+  }
+}
+@media only screen and (min-device-width: 2560px) and (max-device-width: 2870px) {
+  #footer .nameSurname {
+    font-size: 1.65rem;
   }
 }
 @keyframes animate {

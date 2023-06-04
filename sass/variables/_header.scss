@@ -20,7 +20,7 @@
             margin-left: 48.2vw;
         }
         @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
-            margin-left: 48.7vw;
+            margin-left: 48.80vw;
         }
         #homePage {
             display: inline-block;
@@ -38,10 +38,7 @@
                 width: 3.5rem;
             }
             @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
-                width: 4rem;
-            }
-            &:hover {
-                width: 3rem;
+                width: 3.55rem;
             }
         }
     }
@@ -118,6 +115,10 @@
                     letter-spacing: 0.5em;
                     font-size: 1rem;
                     transition: font-size 1s;
+                    @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
+                        font-size: 1.25rem;
+                        margin-left: -0.05rem;
+                    }
                     &:link {
                         color: whitesmoke;
                     }
@@ -127,6 +128,9 @@
                     &:hover {
                         color: whitesmoke;
                         font-size: 1.25rem;
+                        @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
+                            font-size: 2rem;
+                        }
                     }
                     &:active {
                         color: whitesmoke;
