@@ -122,7 +122,7 @@ html {
 #header .lbl-toggle {
   cursor: pointer;
 }
-#header .lbl-toggle h4 {
+#header .lbl-toggle h4, #header .lbl-toggle #h3Logo {
   height: 3.5rem;
   line-height: 3.5rem;
   font-size: 3rem;
@@ -131,35 +131,35 @@ html {
   text-align: center;
 }
 @media only screen and (min-device-width: 576px) and (max-device-width: 768px) {
-  #header .lbl-toggle h4 {
+  #header .lbl-toggle h4, #header .lbl-toggle #h3Logo {
     font-size: 4rem;
   }
 }
 @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-  #header .lbl-toggle h4 {
+  #header .lbl-toggle h4, #header .lbl-toggle #h3Logo {
     font-size: 4rem;
   }
 }
 @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
-  #header .lbl-toggle h4 {
+  #header .lbl-toggle h4, #header .lbl-toggle #h3Logo {
     font-size: 4rem;
   }
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
-  #header .lbl-toggle h4 {
+  #header .lbl-toggle h4, #header .lbl-toggle #h3Logo {
     font-size: 5rem;
   }
 }
-#header .lbl-toggle h4 span {
+#header .lbl-toggle h4 span, #header .lbl-toggle #h3Logo span {
   display: inline-flex;
   color: white;
 }
-#header .lbl-toggle h4 span:nth-child(even) {
+#header .lbl-toggle h4 span:nth-child(even), #header .lbl-toggle #h3Logo span:nth-child(even) {
   overflow: hidden;
   transition: ease-in-out 0.5s;
   letter-spacing: -1em;
 }
-#header .lbl-toggle h4:hover span:nth-child(even) {
+#header .lbl-toggle h4:hover span:nth-child(even), #header .lbl-toggle #h3Logo:hover span:nth-child(even) {
   letter-spacing: 0;
   transition-delay: 0s;
 }
@@ -234,7 +234,7 @@ h2 {
 @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
   h2 {
     font-size: 2.75rem;
-    margin: 6rem auto;
+    margin: 8rem auto;
   }
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
@@ -252,7 +252,7 @@ h2 {
   justify-content: center;
   margin: 7rem auto;
 }
-#mainIndex #proffession {
+#mainIndex .proffession {
   display: flex;
   color: rgb(236, 236, 236);
   text-align: center;
@@ -261,22 +261,22 @@ h2 {
   letter-spacing: 1.2rem;
 }
 @media only screen and (min-device-width: 576px) and (max-device-width: 768px) {
-  #mainIndex #proffession {
+  #mainIndex .proffession {
     font-size: 2rem;
   }
 }
 @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-  #mainIndex #proffession {
+  #mainIndex .proffession {
     font-size: 2.5rem;
   }
 }
 @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
-  #mainIndex #proffession {
+  #mainIndex .proffession {
     font-size: 2.75rem;
   }
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
-  #mainIndex #proffession {
+  #mainIndex .proffession {
     font-size: 4rem;
   }
 }
@@ -367,6 +367,31 @@ h2 {
   font-style: italic;
   margin-bottom: 4rem;
 }
+@media only screen and (min-device-width: 576px) and (max-device-width: 768px) {
+  #mainMywork h3 {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  #mainMywork h3 {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
+  #mainMywork h3 {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (min-device-width: 1441px) and (max-device-width: 2047px) {
+  #mainMywork h3 {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (min-device-width: 2048px) and (max-device-width: 2870px) {
+  #mainMywork h3 {
+    font-size: 2rem;
+  }
+}
 #mainMywork .gallery {
   display: flex;
   flex-direction: column;
@@ -401,7 +426,7 @@ h2 {
     max-width: 35vw;
   }
 }
-@media only screen and (min-device-width: 2048px) {
+@media only screen and (min-device-width: 2048px) and (max-device-width: 2870px) {
   #mainMywork .gallery {
     flex-direction: row;
     max-width: 45vw;
@@ -435,13 +460,13 @@ h2 {
 }
 @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
   #mainMywork .gallery figure figcaption {
-    font-size: 1.35rem;
+    font-size: 1.3rem;
     width: 16rem;
   }
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
   #mainMywork .gallery figure figcaption {
-    font-size: 2rem;
+    font-size: 1.45rem;
     width: 23rem;
   }
 }

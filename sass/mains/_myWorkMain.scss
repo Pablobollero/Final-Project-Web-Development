@@ -7,6 +7,21 @@
         text-align: center;
         font-style: italic;
         margin-bottom: 4rem;
+        @media only screen and (min-device-width: 576px) and (max-device-width: 768px)  {
+            font-size: 1.4rem;
+        }
+        @media only screen and (min-device-width: 769px) and (max-device-width: 1024px)  {
+            font-size: 1.6rem;
+        }
+        @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px)  {
+            font-size: 1.8rem;
+        }
+        @media only screen and (min-device-width: 1441px) and (max-device-width: 2047px)  {
+            font-size: 1.8rem;
+        }
+        @media only screen and (min-device-width: 2048px)  and (max-device-width: 2870px) {
+            font-size: 2rem;
+        }
     }
     .gallery {
         display: flex;
@@ -33,7 +48,7 @@
             flex-direction: row;
             max-width: 35vw;
         }
-        @media only screen and (min-device-width: 2048px)  {
+        @media only screen and (min-device-width: 2048px)  and (max-device-width: 2870px) {
             flex-direction: row;
             max-width: 45vw;
         }
@@ -58,11 +73,11 @@
                     width: 14rem;
                 }
                 @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px)  {
-                    font-size: 1.35rem;
+                    font-size: 1.30rem;
                     width: 16rem;
                 }
                 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
-                    font-size: 2rem;
+                    font-size: 1.45rem;
                     width: 23rem;
                 } 
             }
