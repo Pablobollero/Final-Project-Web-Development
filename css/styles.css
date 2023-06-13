@@ -10,7 +10,7 @@ html {
 
 #bodyIndex {
   font-family: "Audiowide", cursive;
-  background-image: url(../../img/background/backgroundLight.jpg);
+  background-image: url(../img/background/backgroundLight.jpg);
   background-position-x: 60%;
   overflow-x: hidden;
   background-size: cover;
@@ -24,7 +24,7 @@ html {
 
 #bodyPages {
   font-family: "Audiowide", cursive;
-  background-image: url(../../img/background/backgroundLight.jpg);
+  background-image: url(../img/background/backgroundLight.jpg);
   background-position-x: 60%;
   overflow-x: hidden;
   background-size: cover;
