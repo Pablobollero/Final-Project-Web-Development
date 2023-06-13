@@ -1,11 +1,11 @@
-@use './variables/html';
-@use './variables/bodyIndex';
-@use './variables/bodypages';
-@use './variables/header';
-@use './subtitleStyles/h2';
+@use './standardizedSections/html';
+@use './standardizedSections/bodyIndex';
+@use './standardizedSections/bodyPages';
+@use './standardizedSections/header';
+@use './subtitleStyles/subTitle';
 @use './mains/indexMain';
 @use './mains/aboutMeMain';
 @use './mains/myWorkMain';
 @use './mains/skillsMain';
 @use './mains/contactMain';
-@use './variables/footer';
+@use './standardizedSections/footer';

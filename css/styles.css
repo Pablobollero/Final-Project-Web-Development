@@ -10,7 +10,7 @@ html {
 
 #bodyIndex {
   font-family: "Audiowide", cursive;
-  background-image: url(../img/background/pxfuel.jpg);
+  background-image: url(../../img/websitebackground/pxfuel.jpg);
   background-position-x: 60%;
   overflow-x: hidden;
   background-size: cover;
@@ -24,7 +24,7 @@ html {
 
 #bodyPages {
   font-family: "Audiowide", cursive;
-  background-image: url(../img/background/pxfuel.jpg);
+  background-image: url(../../img/websitebackground/pxfuel.jpg);
   background-position-x: 60%;
   overflow-x: hidden;
   background-size: cover;
@@ -40,39 +40,39 @@ html {
   grid-area: header;
   display: block;
 }
-#header .homePageContainer {
+#header .homePageIconContainer {
   display: inline-flex;
   flex-direction: column;
   margin-left: 44.5vw;
   justify-content: baseline;
   align-items: center;
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 425px) {
-  #header .homePageContainer {
+@media only screen and (min-device-width: 375px) and (max-device-width: 425px) {
+  #header .homePageIconContainer {
     margin-left: 46vw;
   }
 }
 @media only screen and (min-device-width: 576px) and (max-device-width: 768px) {
-  #header .homePageContainer {
+  #header .homePageIconContainer {
     margin-left: 47.2vw;
   }
 }
 @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-  #header .homePageContainer {
+  #header .homePageIconContainer {
     margin-left: 47.75vw;
   }
 }
 @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
-  #header .homePageContainer {
+  #header .homePageIconContainer {
     margin-left: 48.2vw;
   }
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
-  #header .homePageContainer {
-    margin-left: 48.8vw;
+  #header .homePageIconContainer {
+    margin-left: 49vw;
   }
 }
-#header .homePageContainer #homePage {
+#header .homePageIconContainer #homePageIcon {
   display: inline-block;
   width: 2rem;
   margin-top: 1rem;
@@ -80,38 +80,38 @@ html {
   transition: width 1s;
 }
 @media only screen and (min-device-width: 576px) and (max-device-width: 768px) {
-  #header .homePageContainer #homePage {
+  #header .homePageIconContainer #homePageIcon {
     width: 2.75rem;
   }
 }
 @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-  #header .homePageContainer #homePage {
+  #header .homePageIconContainer #homePageIcon {
     width: 3rem;
   }
 }
 @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
-  #header .homePageContainer #homePage {
+  #header .homePageIconContainer #homePageIcon {
     width: 3.5rem;
   }
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
-  #header .homePageContainer #homePage {
+  #header .homePageIconContainer #homePageIcon {
     width: 3.55rem;
   }
 }
-#header .menuMessage {
+#header .whereToStartMessage {
   color: orange;
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
   letter-spacing: 0.1em;
 }
-#header .menuMessage .son1 {
+#header .whereToStartMessage .message {
   font-size: 1rem;
   width: 100vw;
   text-align: center;
 }
-#header .menuMessage .son2 {
+#header .whereToStartMessage .arrow {
   width: 100vw;
   text-align: center;
   font-size: 2rem;
@@ -122,7 +122,7 @@ html {
 #header .lbl-toggle {
   cursor: pointer;
 }
-#header .lbl-toggle h4, #header .lbl-toggle #h3Logo {
+#header .lbl-toggle #Logo {
   height: 3.5rem;
   line-height: 3.5rem;
   font-size: 3rem;
@@ -131,89 +131,89 @@ html {
   text-align: center;
 }
 @media only screen and (min-device-width: 576px) and (max-device-width: 768px) {
-  #header .lbl-toggle h4, #header .lbl-toggle #h3Logo {
+  #header .lbl-toggle #Logo {
     font-size: 4rem;
   }
 }
 @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-  #header .lbl-toggle h4, #header .lbl-toggle #h3Logo {
+  #header .lbl-toggle #Logo {
     font-size: 4rem;
   }
 }
 @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
-  #header .lbl-toggle h4, #header .lbl-toggle #h3Logo {
+  #header .lbl-toggle #Logo {
     font-size: 4rem;
   }
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
-  #header .lbl-toggle h4, #header .lbl-toggle #h3Logo {
+  #header .lbl-toggle #Logo {
     font-size: 5rem;
   }
 }
-#header .lbl-toggle h4 span, #header .lbl-toggle #h3Logo span {
+#header .lbl-toggle #Logo span {
   display: inline-flex;
   color: white;
 }
-#header .lbl-toggle h4 span:nth-child(even), #header .lbl-toggle #h3Logo span:nth-child(even) {
+#header .lbl-toggle #Logo span:nth-child(even) {
   overflow: hidden;
   transition: ease-in-out 0.5s;
   letter-spacing: -1em;
 }
-#header .lbl-toggle h4:hover span:nth-child(even), #header .lbl-toggle #h3Logo:hover span:nth-child(even) {
+#header .lbl-toggle #Logo:hover span:nth-child(even) {
   letter-spacing: 0;
   transition-delay: 0s;
 }
-#header .collapsible-content {
+#header .dropdown-content {
   max-height: 0vh;
   position: relative;
   overflow: hidden;
   transition: max-height 0.5s ease-in-out;
 }
-#header .collapsible-content .content-inner {
+#header .dropdown-content .content-inner {
   width: 100vw;
   text-align: center;
 }
-#header .collapsible-content .content-inner li {
+#header .dropdown-content .content-inner li {
   margin-block: 1.25rem;
   list-style: none;
   text-shadow: 0 0 5px white, 0 0 10px white;
 }
-#header .collapsible-content .content-inner li a {
+#header .dropdown-content .content-inner li a {
   text-decoration: none;
   letter-spacing: 0.5em;
   font-size: 1rem;
   transition: font-size 1s;
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
-  #header .collapsible-content .content-inner li a {
+  #header .dropdown-content .content-inner li a {
     font-size: 1.25rem;
     margin-left: -0.05rem;
   }
 }
-#header .collapsible-content .content-inner li a:link {
+#header .dropdown-content .content-inner li a:link {
   color: whitesmoke;
 }
-#header .collapsible-content .content-inner li a:visited {
+#header .dropdown-content .content-inner li a:visited {
   color: whitesmoke;
 }
-#header .collapsible-content .content-inner li a:hover {
+#header .dropdown-content .content-inner li a:hover {
   color: whitesmoke;
   font-size: 1.25rem;
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
-  #header .collapsible-content .content-inner li a:hover {
+  #header .dropdown-content .content-inner li a:hover {
     font-size: 2rem;
   }
 }
-#header .collapsible-content .content-inner li a:active {
+#header .dropdown-content .content-inner li a:active {
   color: whitesmoke;
 }
-#header .toggle:checked + .lbl-toggle + .collapsible-content {
+#header .toggle:checked + .lbl-toggle + .dropdown-content {
   max-height: 16rem;
   overflow: hidden;
 }
 
-h2 {
+#subTitle {
   color: orange;
   letter-spacing: 0.5rem;
   font-size: 1.9rem;
@@ -222,23 +222,23 @@ h2 {
   margin: 3rem auto;
 }
 @media only screen and (min-device-width: 576px) and (max-device-width: 768px) {
-  h2 {
+  #subTitle {
     font-size: 2rem;
   }
 }
 @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-  h2 {
+  #subTitle {
     font-size: 2.5rem;
   }
 }
 @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
-  h2 {
+  #subTitle {
     font-size: 2.75rem;
     margin: 8rem auto;
   }
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
-  h2 {
+  #subTitle {
     font-size: 4rem;
     margin: 10rem auto 7rem auto;
   }
@@ -347,12 +347,12 @@ h2 {
     font-size: 1.5rem;
   }
 }
-#mainAboutme p a {
+#mainAboutme p #growingWord {
   color: orange;
   text-decoration: none;
   transition: font-size 1s;
 }
-#mainAboutme p a:hover {
+#mainAboutme p #growingWord:hover {
   font-size: 3rem;
 }
 
@@ -505,77 +505,143 @@ h2 {
   }
 }
 
-#homePage {
-  box-sizing: unset;
-}
-
 #mainSkills {
   color: white;
   text-align: center;
   margin: 1rem auto;
 }
-#mainSkills .container .row {
-  margin-top: 5rem;
+#mainSkills #gridContainer .row1, #mainSkills #gridContainer .row2, #mainSkills #gridContainer .row3, #mainSkills #gridContainer .row4 {
+  margin: 8rem auto;
+  width: 80%;
   padding: 2rem;
   background-color: rgba(0, 0, 0, 0.45);
   border: 0.1rem solid black;
-}
-#mainSkills .container .row h3 {
-  margin: 1rem auto;
-}
-@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
-  #mainSkills .container .row h3 {
-    font-size: 2.5rem;
-  }
-}
-#mainSkills .container .row img {
-  width: 20%;
-  margin: 1rem auto;
+  display: grid;
+  grid-template-areas: "skill" "image" "description";
 }
 @media only screen and (min-device-width: 576px) and (max-device-width: 768px) {
-  #mainSkills .container .row img {
-    width: 50%;
+  #mainSkills #gridContainer .row1, #mainSkills #gridContainer .row2, #mainSkills #gridContainer .row3, #mainSkills #gridContainer .row4 {
+    grid-template-areas: "skill image description";
   }
 }
 @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-  #mainSkills .container .row img {
-    width: 45%;
+  #mainSkills #gridContainer .row1, #mainSkills #gridContainer .row2, #mainSkills #gridContainer .row3, #mainSkills #gridContainer .row4 {
+    grid-template-areas: "skill image description";
   }
 }
 @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
-  #mainSkills .container .row img {
-    width: 40%;
+  #mainSkills #gridContainer .row1, #mainSkills #gridContainer .row2, #mainSkills #gridContainer .row3, #mainSkills #gridContainer .row4 {
+    grid-template-areas: "skill image description";
   }
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
-  #mainSkills .container .row img {
-    width: 60%;
+  #mainSkills #gridContainer .row1, #mainSkills #gridContainer .row2, #mainSkills #gridContainer .row3, #mainSkills #gridContainer .row4 {
+    grid-template-areas: "skill image description";
   }
 }
-#mainSkills .container .row p {
-  width: 100%;
-  font-size: 0.89rem;
-  margin: 0 auto;
-  letter-spacing: 0.05rem;
+#mainSkills #gridContainer .row1 .skillNameContainer, #mainSkills #gridContainer .row2 .skillNameContainer, #mainSkills #gridContainer .row3 .skillNameContainer, #mainSkills #gridContainer .row4 .skillNameContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#mainSkills #gridContainer .row1 .skillNameContainer h3, #mainSkills #gridContainer .row2 .skillNameContainer h3, #mainSkills #gridContainer .row3 .skillNameContainer h3, #mainSkills #gridContainer .row4 .skillNameContainer h3 {
+  grid-area: skill;
+  font-size: 1rem;
+  width: auto;
 }
 @media only screen and (min-device-width: 576px) and (max-device-width: 768px) {
-  #mainSkills .container .row p {
-    font-size: 0.95rem;
+  #mainSkills #gridContainer .row1 .skillNameContainer h3, #mainSkills #gridContainer .row2 .skillNameContainer h3, #mainSkills #gridContainer .row3 .skillNameContainer h3, #mainSkills #gridContainer .row4 .skillNameContainer h3 {
+    font-size: 1rem;
   }
 }
 @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-  #mainSkills .container .row p {
+  #mainSkills #gridContainer .row1 .skillNameContainer h3, #mainSkills #gridContainer .row2 .skillNameContainer h3, #mainSkills #gridContainer .row3 .skillNameContainer h3, #mainSkills #gridContainer .row4 .skillNameContainer h3 {
     font-size: 1rem;
   }
 }
 @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
-  #mainSkills .container .row p {
+  #mainSkills #gridContainer .row1 .skillNameContainer h3, #mainSkills #gridContainer .row2 .skillNameContainer h3, #mainSkills #gridContainer .row3 .skillNameContainer h3, #mainSkills #gridContainer .row4 .skillNameContainer h3 {
     font-size: 1.25rem;
   }
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
-  #mainSkills .container .row p {
-    font-size: 2rem;
+  #mainSkills #gridContainer .row1 .skillNameContainer h3, #mainSkills #gridContainer .row2 .skillNameContainer h3, #mainSkills #gridContainer .row3 .skillNameContainer h3, #mainSkills #gridContainer .row4 .skillNameContainer h3 {
+    font-size: 1.5rem;
+  }
+}
+#mainSkills #gridContainer .row1 .imageSkillContainer, #mainSkills #gridContainer .row2 .imageSkillContainer, #mainSkills #gridContainer .row3 .imageSkillContainer, #mainSkills #gridContainer .row4 .imageSkillContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#mainSkills #gridContainer .row1 .imageSkillContainer img, #mainSkills #gridContainer .row2 .imageSkillContainer img, #mainSkills #gridContainer .row3 .imageSkillContainer img, #mainSkills #gridContainer .row4 .imageSkillContainer img {
+  grid-area: image;
+  width: 30%;
+  margin: 3rem auto;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (min-device-width: 576px) and (max-device-width: 768px) {
+  #mainSkills #gridContainer .row1 .imageSkillContainer img, #mainSkills #gridContainer .row2 .imageSkillContainer img, #mainSkills #gridContainer .row3 .imageSkillContainer img, #mainSkills #gridContainer .row4 .imageSkillContainer img {
+    width: 35%;
+  }
+}
+@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  #mainSkills #gridContainer .row1 .imageSkillContainer img, #mainSkills #gridContainer .row2 .imageSkillContainer img, #mainSkills #gridContainer .row3 .imageSkillContainer img, #mainSkills #gridContainer .row4 .imageSkillContainer img {
+    width: 35%;
+  }
+}
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
+  #mainSkills #gridContainer .row1 .imageSkillContainer img, #mainSkills #gridContainer .row2 .imageSkillContainer img, #mainSkills #gridContainer .row3 .imageSkillContainer img, #mainSkills #gridContainer .row4 .imageSkillContainer img {
+    width: 25%;
+  }
+}
+@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
+  #mainSkills #gridContainer .row1 .imageSkillContainer img, #mainSkills #gridContainer .row2 .imageSkillContainer img, #mainSkills #gridContainer .row3 .imageSkillContainer img, #mainSkills #gridContainer .row4 .imageSkillContainer img {
+    width: 25%;
+  }
+}
+#mainSkills #gridContainer .row1 .skillDescriptionContainer, #mainSkills #gridContainer .row2 .skillDescriptionContainer, #mainSkills #gridContainer .row3 .skillDescriptionContainer, #mainSkills #gridContainer .row4 .skillDescriptionContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#mainSkills #gridContainer .row1 .skillDescriptionContainer p, #mainSkills #gridContainer .row2 .skillDescriptionContainer p, #mainSkills #gridContainer .row3 .skillDescriptionContainer p, #mainSkills #gridContainer .row4 .skillDescriptionContainer p {
+  grid-area: description;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  font-size: 0.95rem;
+  margin: 0 auto;
+  letter-spacing: 0.05rem;
+}
+@media only screen and (min-device-width: 576px) and (max-device-width: 768px) {
+  #mainSkills #gridContainer .row1 .skillDescriptionContainer p, #mainSkills #gridContainer .row2 .skillDescriptionContainer p, #mainSkills #gridContainer .row3 .skillDescriptionContainer p, #mainSkills #gridContainer .row4 .skillDescriptionContainer p {
+    width: 75%;
+  }
+}
+@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  #mainSkills #gridContainer .row1 .skillDescriptionContainer p, #mainSkills #gridContainer .row2 .skillDescriptionContainer p, #mainSkills #gridContainer .row3 .skillDescriptionContainer p, #mainSkills #gridContainer .row4 .skillDescriptionContainer p {
+    width: 40rem;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+  }
+}
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
+  #mainSkills #gridContainer .row1 .skillDescriptionContainer p, #mainSkills #gridContainer .row2 .skillDescriptionContainer p, #mainSkills #gridContainer .row3 .skillDescriptionContainer p, #mainSkills #gridContainer .row4 .skillDescriptionContainer p {
+    width: 45rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.12rem;
+  }
+}
+@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
+  #mainSkills #gridContainer .row1 .skillDescriptionContainer p, #mainSkills #gridContainer .row2 .skillDescriptionContainer p, #mainSkills #gridContainer .row3 .skillDescriptionContainer p, #mainSkills #gridContainer .row4 .skillDescriptionContainer p {
+    width: 50rem;
+    font-size: 1.35rem;
+    letter-spacing: 0.25rem;
   }
 }
 
@@ -617,16 +683,34 @@ h2 {
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
   #mainContact p {
     font-size: 1.75rem;
-    width: 35%;
+    width: 75%;
   }
 }
 #mainContact form {
-  width: 60vw;
-  max-width: 390px;
-  min-width: 300px;
+  width: 75vw;
   margin: 3rem auto;
   padding-bottom: 2em;
   background-color: rgba(0, 0, 0, 0.3);
+}
+@media only screen and (min-device-width: 576px) and (max-device-width: 768px) {
+  #mainContact form {
+    width: 45vw;
+  }
+}
+@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  #mainContact form {
+    width: 38vw;
+  }
+}
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
+  #mainContact form {
+    width: 30vw;
+  }
+}
+@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
+  #mainContact form {
+    width: 15vw;
+  }
 }
 #mainContact form fieldset {
   border: none;
@@ -688,14 +772,19 @@ h2 {
   color: black;
   border: solid 0.2rem #828282;
 }
-
-input, textarea, select {
+#mainContact form input, #mainContact form textarea, #mainContact form select {
   margin: 10px 0 0 0;
   width: 75%;
   min-height: 2em;
   background-color: white;
   border: 1px solid black;
   font-weight: 600;
+  font-size: 1rem;
+}
+@media only screen and (min-device-width: 2561px) and (max-device-width: 4096px) {
+  #mainContact form input, #mainContact form textarea, #mainContact form select {
+    font-size: 2.5rem;
+  }
 }
 
 #footer {
@@ -724,7 +813,7 @@ input, textarea, select {
   justify-content: center;
   align-items: center;
 }
-#footer .footerContainer .listFooter {
+#footer .footerContainer .footerList {
   display: flex;
   margin: 0 auto;
   align-items: center;
@@ -732,32 +821,32 @@ input, textarea, select {
   text-align: center;
   padding: 0;
 }
-#footer .footerContainer .listFooter li {
+#footer .footerContainer .footerList li {
   display: inline-block;
 }
-#footer .footerContainer .listFooter li .linkFooter {
+#footer .footerContainer .footerList li .instagram {
   width: 1.5rem;
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
-  #footer .footerContainer .listFooter li .linkFooter {
+  #footer .footerContainer .footerList li .instagram {
     width: 2.5rem;
   }
 }
 @media only screen and (min-device-width: 2560px) and (max-device-width: 2870px) {
-  #footer .footerContainer .listFooter li .linkFooter {
+  #footer .footerContainer .footerList li .instagram {
     width: 3.5rem;
   }
 }
-#footer .footerContainer .listFooter li .linkFooter2 {
+#footer .footerContainer .footerList li .gitHub {
   width: 2.5rem;
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
-  #footer .footerContainer .listFooter li .linkFooter2 {
+  #footer .footerContainer .footerList li .gitHub {
     width: 4rem;
   }
 }
 @media only screen and (min-device-width: 2560px) and (max-device-width: 2870px) {
-  #footer .footerContainer .listFooter li .linkFooter2 {
+  #footer .footerContainer .footerList li .gitHub {
     width: 5.75rem;
   }
 }

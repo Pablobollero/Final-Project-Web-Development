@@ -4,31 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch to have a quote or to know more about what we can do together.">
+    <meta name="keywords" content="contact, get in touch, contact form">
+    <title>Pablo Bollero - Contact</title>
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
-    <title>>Pablo Bollero Portfolio - Contact</title>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="../img/favicon/favicon.svg" type="image/svg">
 </head>
 <body>
     <div id="bodyPages">
+        <!--Header-->
         <header id="header">
-            <a class="homePageContainer" href="../index.html"><img id="homePage" src="../img/icons/icons-pagination/iconizer-home_white_24dp (1).svg" alt="Home Page Logo"></a>
-            <input id="collapsible" class="toggle" type="checkbox"> <label for="collapsible" class="lbl-toggle"><h3 id="h3Logo"><span>&#10100;</span><span></span><span>P</span><span>ablo</span><span>&#x276C;/&#x276D;</span><span></span><span>B</span><span>ollero</span><span>&#10101;</span><span></span></h3></label>
-            <nav class="collapsible-content">
+            <!--Homepage Icon-->
+            <a class="homePageIconContainer" href="../index.html"><img id="homePageIcon" src="../img/icons/icons-pagination/iconizer-home_white_24dp (1).svg" alt="Home Page Logo for collapsible menu."></a>
+            <!--Expandable logo for menu-->
+            <input id="dropdown" class="toggle" type="checkbox"> <label for="dropdown" class="lbl-toggle"><h1 id="Logo" ><span>&#10100;</span><span></span><span>P</span><span>ablo</span><span>&#x276C;/&#x276D;</span><span></span><span>B</span><span>ollero</span><span>&#10101;</span><span></span></h1></label>
+            <!--Dropdown menu-->
+            <nav class="dropdown-content">
                 <ul class="content-inner">
                     <li><a href="../pages/aboutMe.html">About me</a></li>
-                    <li><a href="../pages/myWork.html">My works</a></li>
+                    <li><a href="../pages/myWork.html">My work</a></li>
                     <li><a href="../pages/skills.html">Skills</a></li>
                     <li><a href="../pages/contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
+        <!--Main-->
         <main id="mainContact">
-            <h2>Get in touch!</h2>
-            <p>If you feel I'm the right person to fit your needs, fill up this form and I'll get back to you!</p>
+            <!--Webpage title-->
+            <h2 id="subTitle">Get in touch!</h2>
+            <span><p>If you feel I'm the right person to fit your needs, fill up this form and I'll get back to you!</p></span>
+            <!--Contact form-->
             <form method="post" action="">
+                <!--Personal information inputs-->
                 <fieldset class="fieldSet1">
                     <label for="first-name">Enter your First Name: <input id="first-name" name="first-name" type="text" placeholder=" John"required /></label>
                     <label for="last-name">Enter your Last Name: <input id="last-name" name="last-name" type="text"placeholder=" Doe" required /></label>
@@ -36,6 +48,7 @@
                     <label for="phone">Enter your phone number: <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder=" +44 075 214..." required/></label>          
                 </fieldset>
                 <fieldset>
+                    <!--Dropdown selector-->
                     <label for="referrer">How did you hear about me?
                         <select id="referrer" name="referrer" required>
                             <option value="">(select one)</option>
@@ -44,21 +57,24 @@
                             <option value="3">Instagram</option>
                             <option value="4">Other (Tell me below)</option>
                         </select>
+                    <!--Textarea for enquiries-->
                     <label for="bio">Tell me how may I help you!
                         <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I would like to have a website..."></textarea>
                     </label>
                 </fieldset>
+                <!--Submit button-->
                 <input type="submit" value="Send"/>
             </form>
         </main>
+        <!--Footer-->
         <footer id="footer">
             <div class="footerContainer">
-                <ul class="listFooter">
-                    <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img class="linkFooter" src="../img/icons/icons-socialmedia/instagram.png" alt="Instagram link"></a></li>
-                    <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer"><img class="linkFooter2" src="../img/icons/icons-socialmedia/GitHub-Simbolo.png" alt="GitHub link"></a></li>
+                <ul class="footerList">
+                    <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img class="instagram" src="../img/icons/icons-socialmedia/instagram.png" alt="Instagram link"></a></li>
+                    <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer"><img class="gitHub" src="../img/icons/icons-socialmedia/GitHub-Simbolo.png" alt="GitHub link"></a></li>
                 </ul>
             </div>
-            <p>Developed by <h1 class="nameSurname">Pablo Bollero</h1> March 2023, London, UK.</p>
+            <span><p>Developed by <h3 class="nameSurname">Pablo Bollero</h3> March 2023, London, UK.</p></span>
         </footer>
     </div>
 </body>

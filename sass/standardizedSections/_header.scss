@@ -1,13 +1,14 @@
 #header {
     grid-area: header;
     display: block;
-    .homePageContainer {
+    // Homepage icon container for About me, Contact, My work, and Skills pages.
+    .homePageIconContainer {
         display: inline-flex;
         flex-direction: column;
         margin-left: 44.5vw;
         justify-content: baseline;
         align-items: center;
-        @media only screen and (min-device-width: 320px) and (max-device-width: 425px)  {
+        @media only screen and (min-device-width: 375px) and (max-device-width: 425px)  {
             margin-left: 46vw;
         }
         @media only screen and (min-device-width: 576px) and (max-device-width: 768px)  {
@@ -20,9 +21,10 @@
             margin-left: 48.2vw;
         }
         @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
-            margin-left: 48.80vw;
+            margin-left: 49vw;
         }
-        #homePage {
+        // Homepage Icon
+        #homePageIcon {
             display: inline-block;
             width: 2rem;
             margin-top: 1rem;
@@ -42,18 +44,19 @@
             }
         }
     }
-    .menuMessage {
+    // Index page top message
+    .whereToStartMessage {
         color: orange;
         display: flex;
         flex-direction: column;
         margin-top: 2rem;
         letter-spacing: 0.1em;
-        .son1 {
+        .message {
             font-size: 1rem;
             width: 100vw;
             text-align: center;
         }
-        .son2 {
+        .arrow {
             width: 100vw;
             text-align: center;
             font-size: 2rem;
@@ -62,9 +65,11 @@
     input[type='checkbox'] {
         display: none;
     }
+    // Label for checkbox.
     .lbl-toggle {
         cursor: pointer;
-        h4, #h3Logo {
+        // Expandable logo for menu
+        #Logo {
             height: 3.5rem;
             line-height: 3.5rem;
             font-size: 3rem;
@@ -98,7 +103,8 @@
             }
         }
     }
-    .collapsible-content {
+    // Dropdown menu
+    .dropdown-content {
         max-height: 0vh;
         position: relative;
         overflow: hidden;
@@ -139,7 +145,7 @@
             }
         }
     }
-    .toggle:checked+.lbl-toggle+.collapsible-content {
+    .toggle:checked+.lbl-toggle+.dropdown-content {
         max-height: 16rem;
         overflow: hidden;
     }

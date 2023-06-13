@@ -4,57 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--BOOTSTRAP-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <meta name="description" content="Find about what I'm skilled to.">
+    <meta name="keywords" content="html, html5,css3, sass, bootstrap">
+    <title>Pablo Bollero - My skills</title>
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
-    <title>Pablo Bollero Portfolio - Skills</title>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="../img/favicon/favicon.svg" type="image/svg">
 </head>
 <body>
     <div id="bodyPages">
+        <!--Header-->
         <header id="header">
-            <a class="homePageContainer" href="../index.html"><img id="homePage" src="../img/icons/icons-pagination/iconizer-home_white_24dp (1).svg" alt="Home Page Logo"></a>
-            <input id="collapsible" class="toggle" type="checkbox"> <label for="collapsible" class="lbl-toggle"><h4 class="logoPages"><span>&#10100;</span><span></span><span>P</span><span>ablo</span><span>&#x276C;/&#x276D;</span><span></span><span>B</span><span>ollero</span><span>&#10101;</span><span></span></h4></label>
-            <nav class="collapsible-content">
+            <!--Homepage Icon-->
+            <a class="homePageIconContainer" href="../index.html"><img id="homePageIcon" src="../img/icons/icons-pagination/iconizer-home_white_24dp (1).svg" alt="Home Page Logo for collapsible menu."></a>
+            <!--Expandable logo for menu-->
+            <input id="dropdown" class="toggle" type="checkbox"> <label for="dropdown" class="lbl-toggle"><h1 id="Logo" ><span>&#10100;</span><span></span><span>P</span><span>ablo</span><span>&#x276C;/&#x276D;</span><span></span><span>B</span><span>ollero</span><span>&#10101;</span><span></span></h1></label>
+            <!--Dropdown menu-->
+            <nav class="dropdown-content">
                 <ul class="content-inner">
                     <li><a href="../pages/aboutMe.html">About me</a></li>
-                    <li><a href="../pages/myWork.html">My works</a></li>
+                    <li><a href="../pages/myWork.html">My work</a></li>
                     <li><a href="../pages/skills.html">Skills</a></li>
                     <li><a href="../pages/contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
+        <!--Main-->
         <main id="mainSkills">
-            <h2>Skills achieved!</h2>
-            <div class="container text-center">
-                <div class="row align-items-center">
-                    <div class="col-xs-12 col-sm-3 col-md-3"><h3>&#10026; HTML5 &#10026;</h3></div>
-                    <div class="col-xs-12 col-sm-3 col-md-3"><img src="../img/icons/icons-lenguage/html-icon.png" alt="HTML5 Icon"></div>
-                    <div class="col-xs-12 col-sm-6 col-md-6"><p>HTML5 is a markup language used for structuring and presenting content on the World Wide Web. <br><br>Taking as example the human body, sould be like the bones, HTML5 does the same function, without him, any website or webpage can't be build it. <br><br>You aswell, without bones will never can stand up by your self.</p></div>
+            <!--Webpage title-->
+            <h2 id="subTitle">Skills achieved!</h2>
+            <!--Skills list description-->
+            <div id="gridContainer">
+                <div class="row1">
+                    <div class="skillNameContainer"><h3>&#10026; HTML5 &#10026;</h3></div>
+                    <div class="imageSkillContainer"><img src="../img/icons/icons-lenguage/html-icon.png" alt="HTML5 Icon"></div>
+                    <div class="skillDescriptionContainer"><p>HTML5 is a markup language used for structuring and presenting content on the World Wide Web. <br><br>Taking as example the human body, sould be like the bones, HTML5 does the same function, without him, any website or webpage can't be build it. <br><br>You aswell, without bones will never can stand up by your self.</p></div>
                 </div>
-                <div class="row align-items-center">
-                    <div class="col-xs-12 col-sm-3 col-md-3"><h3>&#10026; CSS3 &#10026;</h3></div>
-                    <div class="col-xs-12 col-sm-3 col-md-3"><img src="../img/icons/icons-lenguage/css3-icon.png" alt="CSS3 Icon"></div>
-                    <div class="col-xs-12 col-sm-6 col-md-6"><p>CSS stands for Cascade Style Sheet used for describing the presentation of a document written in a markup language such as HTML or XML.<br><br> With it you're able to provide the separation of content and presentation, including layout, colors, and fonts. This separation can improve content accessibility; provide more flexibility and control in the specification of presentation characteristics. <br><br>Taking as example the human body, sould be like the skin and hair.</p></div>
+                <div class="row2">
+                    <div class="skillNameContainer"><h3>&#10026; CSS3 &#10026;</h3></div>
+                    <div class="imageSkillContainer"><img src="../img/icons/icons-lenguage/css3-icon.png" alt="CSS3 Icon"></div>
+                    <div class="skillDescriptionContainer"><p>CSS stands for Cascade Style Sheet used for describing the presentation of a document written in a markup language such as HTML or XML.<br><br> With it you're able to provide the separation of content and presentation, including layout, colors, and fonts. This separation can improve content accessibility; provide more flexibility and control in the specification of presentation characteristics. <br><br>Taking as example the human body, sould be like the skin and hair.</p></div>
                 </div>
-                <div class="row align-items-center">
-                    <div class="col-xs-12 col-sm-3 col-md-3"><h3>&#10026; SASS &#10026;</h3></div>
-                    <div class="col-xs-12 col-sm-3 col-md-3"><img src="../img/icons/icons-lenguage/Sass.png" alt="CSS3 Icon"></div>
-                    <div class="col-xs-12 col-sm-6 col-md-6"><p>Sass is a stylesheet language that is compiled to CSS. It allows you to use variables, nested rules, mixins, functions, and more, all with a fully CSS-compatible syntax. Sass helps keep large stylesheets well-organized and makes it easy to share design within and across projects.</p></div>
+                <div class="row3">
+                    <div class="skillNameContainer"><h3>&#10026; SASS &#10026;</h3></div>
+                    <div class="imageSkillContainer"><img src="../img/icons/icons-lenguage/Sass.png" alt="SASS Icon"></div>
+                    <div class="skillDescriptionContainer"><p>Sass is a stylesheet language that is compiled to CSS. It allows you to use variables, nested rules, mixins, functions, and more, all with a fully CSS-compatible syntax. Sass helps keep large stylesheets well-organized and makes it easy to share design within and across projects.</p></div>
+                </div>
+                <div class="row4">
+                    <div class="skillNameContainer"><h3>&#10026; BOOTSTRAP &#10026;</h3></div>
+                    <div class="imageSkillContainer"><img src="../img/icons/icons-lenguage/bootstrap.svg" alt="BOOTSTRAP Icon"></div>
+                    <div class="skillDescriptionContainer"><p>Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains HTML, CSS and (optionally) JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.</p></div>
                 </div>
             </div>
         </main>
+        <!--Footer-->
         <footer id="footer">
             <div class="footerContainer">
-                <ul class="listFooter">
-                    <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img class="linkFooter" src="../img/icons/icons-socialmedia/instagram.png" alt="Instagram link"></a></li>
-                    <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer"><img class="linkFooter2" src="../img/icons/icons-socialmedia/GitHub-Simbolo.png" alt="GitHub link"></a></li>
+                <ul class="footerList">
+                    <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img class="instagram" src="../img/icons/icons-socialmedia/instagram.png" alt="Instagram link"></a></li>
+                    <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer"><img class="gitHub" src="../img/icons/icons-socialmedia/GitHub-Simbolo.png" alt="GitHub link"></a></li>
                 </ul>
             </div>
-            <p>Developed by <h1 class="nameSurname">Pablo Bollero</h1> March 2023, London, UK.</p>
+            <span><p>Developed by <h3 class="nameSurname">Pablo Bollero</h3> March 2023, London, UK.</p></span>
         </footer>
     </div>
 </body>
