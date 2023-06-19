@@ -39,28 +39,26 @@
             <h2 id="subTitle">Get in touch!</h2>
             <span><p>If you feel I'm the right person to fit your needs, fill up this form and I'll get back to you!</p></span>
             <!--Contact form-->
-            <form method="post" action="">
+            <form method="post" name="contactForm" action="https://formspree.io/f/mbjenqnp" accept-charset="utf-8">
                 <!--Personal information inputs-->
-                <fieldset class="fieldSet1">
-                    <label for="first-name">Enter your First Name: <input id="first-name" name="first-name" type="text" placeholder=" John"required /></label>
-                    <label for="last-name">Enter your Last Name: <input id="last-name" name="last-name" type="text"placeholder=" Doe" required /></label>
-                    <label for="email">Enter your Email: <input id="email" name="email" type="email" placeholder=" john.doe@domain.com" required /></label>
-                    <label for="phone">Enter your phone number: <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder=" +44 075 214..." required/></label>          
-                </fieldset>
                 <fieldset>
+                    <label for="full-name">Full Name</label>
+                    <input type="text" name="Full Name" id="full-name" placeholder="John Doe" required>
+                    <label for="email-address">Email Address</label>
+                    <input type="email" name="E-mail" id="email-address" placeholder="email@domain.com" required>          
                     <!--Dropdown selector-->
-                    <label for="referrer">How did you hear about me?
-                        <select id="referrer" name="referrer" required>
-                            <option value="">(select one)</option>
-                            <option value="1">Refered by friend</option>
-                            <option value="2">GitHub</option>
-                            <option value="3">Instagram</option>
-                            <option value="4">Other (Tell me below)</option>
+                    <label for="referrer">How did you hear about me?</label>
+                        <select id="referrer" name="How did you hear about me?" required>
+                            <option value="" selected="" disabled="">(select one)</option>
+                            <option value="Refered_by_friend">Refered by friend</option>
+                            <option value="GitHub">GitHub</option>
+                            <option value="Instagram">Instagram</option>
+                            <option value="Other">Other (Tell me below)</option>
                         </select>
                     <!--Textarea for enquiries-->
-                    <label for="bio">Tell me how may I help you!
-                        <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I would like to have a website..."></textarea>
-                    </label>
+                    <label for="message">Tell me how may I help you!</label>
+                    <textarea id="message" name="Message" rows="3" cols="30" placeholder="I would like to have a website..." required></textarea>
+                    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
                 </fieldset>
                 <!--Submit button-->
                 <input type="submit" value="Send"/>
