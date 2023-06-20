@@ -4,8 +4,8 @@
     margin: 1rem auto;
     // Grid container for skills descriptions
     #gridContainer {
-        .row1,.row2, .row3, .row4 {
-            margin: 8rem auto;
+        .row1,.row2, .row3, .row4, .row5, .row6 {
+            margin: 2rem auto;
             width: 80%;
             padding: 2rem;
             background-color: rgba(black, 0.45);
@@ -67,7 +67,7 @@
                 img {
                     grid-area: image;
                     width: 30%;
-                    margin: 3rem auto;
+                    margin: 1.5rem auto;
                     align-items: center;
                     justify-content: center;
                     @media only screen and (min-device-width: 576px) and (max-device-width: 768px)  {
@@ -93,7 +93,7 @@
                     grid-area: description;
                     align-items: center;
                     justify-content: center;
-                    width: 50%;
+                    width: 100%;
                     font-size: 0.95rem;
                     margin: 0 auto;
                     letter-spacing: 0.05rem;

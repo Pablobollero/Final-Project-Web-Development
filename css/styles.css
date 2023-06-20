@@ -510,8 +510,8 @@ html {
   text-align: center;
   margin: 1rem auto;
 }
-#mainSkills #gridContainer .row1, #mainSkills #gridContainer .row2, #mainSkills #gridContainer .row3, #mainSkills #gridContainer .row4 {
-  margin: 8rem auto;
+#mainSkills #gridContainer .row1, #mainSkills #gridContainer .row2, #mainSkills #gridContainer .row3, #mainSkills #gridContainer .row4, #mainSkills #gridContainer .row5, #mainSkills #gridContainer .row6 {
+  margin: 2rem auto;
   width: 80%;
   padding: 2rem;
   background-color: rgba(0, 0, 0, 0.45);
@@ -520,125 +520,125 @@ html {
   grid-template-areas: "skill" "image" "description";
 }
 @media only screen and (min-device-width: 576px) and (max-device-width: 768px) {
-  #mainSkills #gridContainer .row1, #mainSkills #gridContainer .row2, #mainSkills #gridContainer .row3, #mainSkills #gridContainer .row4 {
+  #mainSkills #gridContainer .row1, #mainSkills #gridContainer .row2, #mainSkills #gridContainer .row3, #mainSkills #gridContainer .row4, #mainSkills #gridContainer .row5, #mainSkills #gridContainer .row6 {
     grid-template-areas: "skill image description";
   }
 }
 @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-  #mainSkills #gridContainer .row1, #mainSkills #gridContainer .row2, #mainSkills #gridContainer .row3, #mainSkills #gridContainer .row4 {
+  #mainSkills #gridContainer .row1, #mainSkills #gridContainer .row2, #mainSkills #gridContainer .row3, #mainSkills #gridContainer .row4, #mainSkills #gridContainer .row5, #mainSkills #gridContainer .row6 {
     grid-template-areas: "skill image description";
   }
 }
 @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
-  #mainSkills #gridContainer .row1, #mainSkills #gridContainer .row2, #mainSkills #gridContainer .row3, #mainSkills #gridContainer .row4 {
+  #mainSkills #gridContainer .row1, #mainSkills #gridContainer .row2, #mainSkills #gridContainer .row3, #mainSkills #gridContainer .row4, #mainSkills #gridContainer .row5, #mainSkills #gridContainer .row6 {
     grid-template-areas: "skill image description";
   }
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
-  #mainSkills #gridContainer .row1, #mainSkills #gridContainer .row2, #mainSkills #gridContainer .row3, #mainSkills #gridContainer .row4 {
+  #mainSkills #gridContainer .row1, #mainSkills #gridContainer .row2, #mainSkills #gridContainer .row3, #mainSkills #gridContainer .row4, #mainSkills #gridContainer .row5, #mainSkills #gridContainer .row6 {
     grid-template-areas: "skill image description";
   }
 }
-#mainSkills #gridContainer .row1 .skillNameContainer, #mainSkills #gridContainer .row2 .skillNameContainer, #mainSkills #gridContainer .row3 .skillNameContainer, #mainSkills #gridContainer .row4 .skillNameContainer {
+#mainSkills #gridContainer .row1 .skillNameContainer, #mainSkills #gridContainer .row2 .skillNameContainer, #mainSkills #gridContainer .row3 .skillNameContainer, #mainSkills #gridContainer .row4 .skillNameContainer, #mainSkills #gridContainer .row5 .skillNameContainer, #mainSkills #gridContainer .row6 .skillNameContainer {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
-#mainSkills #gridContainer .row1 .skillNameContainer h3, #mainSkills #gridContainer .row2 .skillNameContainer h3, #mainSkills #gridContainer .row3 .skillNameContainer h3, #mainSkills #gridContainer .row4 .skillNameContainer h3 {
+#mainSkills #gridContainer .row1 .skillNameContainer h3, #mainSkills #gridContainer .row2 .skillNameContainer h3, #mainSkills #gridContainer .row3 .skillNameContainer h3, #mainSkills #gridContainer .row4 .skillNameContainer h3, #mainSkills #gridContainer .row5 .skillNameContainer h3, #mainSkills #gridContainer .row6 .skillNameContainer h3 {
   grid-area: skill;
   font-size: 1rem;
   width: auto;
 }
 @media only screen and (min-device-width: 576px) and (max-device-width: 768px) {
-  #mainSkills #gridContainer .row1 .skillNameContainer h3, #mainSkills #gridContainer .row2 .skillNameContainer h3, #mainSkills #gridContainer .row3 .skillNameContainer h3, #mainSkills #gridContainer .row4 .skillNameContainer h3 {
+  #mainSkills #gridContainer .row1 .skillNameContainer h3, #mainSkills #gridContainer .row2 .skillNameContainer h3, #mainSkills #gridContainer .row3 .skillNameContainer h3, #mainSkills #gridContainer .row4 .skillNameContainer h3, #mainSkills #gridContainer .row5 .skillNameContainer h3, #mainSkills #gridContainer .row6 .skillNameContainer h3 {
     font-size: 1rem;
   }
 }
 @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-  #mainSkills #gridContainer .row1 .skillNameContainer h3, #mainSkills #gridContainer .row2 .skillNameContainer h3, #mainSkills #gridContainer .row3 .skillNameContainer h3, #mainSkills #gridContainer .row4 .skillNameContainer h3 {
+  #mainSkills #gridContainer .row1 .skillNameContainer h3, #mainSkills #gridContainer .row2 .skillNameContainer h3, #mainSkills #gridContainer .row3 .skillNameContainer h3, #mainSkills #gridContainer .row4 .skillNameContainer h3, #mainSkills #gridContainer .row5 .skillNameContainer h3, #mainSkills #gridContainer .row6 .skillNameContainer h3 {
     font-size: 1rem;
   }
 }
 @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
-  #mainSkills #gridContainer .row1 .skillNameContainer h3, #mainSkills #gridContainer .row2 .skillNameContainer h3, #mainSkills #gridContainer .row3 .skillNameContainer h3, #mainSkills #gridContainer .row4 .skillNameContainer h3 {
+  #mainSkills #gridContainer .row1 .skillNameContainer h3, #mainSkills #gridContainer .row2 .skillNameContainer h3, #mainSkills #gridContainer .row3 .skillNameContainer h3, #mainSkills #gridContainer .row4 .skillNameContainer h3, #mainSkills #gridContainer .row5 .skillNameContainer h3, #mainSkills #gridContainer .row6 .skillNameContainer h3 {
     font-size: 1.25rem;
   }
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
-  #mainSkills #gridContainer .row1 .skillNameContainer h3, #mainSkills #gridContainer .row2 .skillNameContainer h3, #mainSkills #gridContainer .row3 .skillNameContainer h3, #mainSkills #gridContainer .row4 .skillNameContainer h3 {
+  #mainSkills #gridContainer .row1 .skillNameContainer h3, #mainSkills #gridContainer .row2 .skillNameContainer h3, #mainSkills #gridContainer .row3 .skillNameContainer h3, #mainSkills #gridContainer .row4 .skillNameContainer h3, #mainSkills #gridContainer .row5 .skillNameContainer h3, #mainSkills #gridContainer .row6 .skillNameContainer h3 {
     font-size: 1.5rem;
   }
 }
-#mainSkills #gridContainer .row1 .imageSkillContainer, #mainSkills #gridContainer .row2 .imageSkillContainer, #mainSkills #gridContainer .row3 .imageSkillContainer, #mainSkills #gridContainer .row4 .imageSkillContainer {
+#mainSkills #gridContainer .row1 .imageSkillContainer, #mainSkills #gridContainer .row2 .imageSkillContainer, #mainSkills #gridContainer .row3 .imageSkillContainer, #mainSkills #gridContainer .row4 .imageSkillContainer, #mainSkills #gridContainer .row5 .imageSkillContainer, #mainSkills #gridContainer .row6 .imageSkillContainer {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
-#mainSkills #gridContainer .row1 .imageSkillContainer img, #mainSkills #gridContainer .row2 .imageSkillContainer img, #mainSkills #gridContainer .row3 .imageSkillContainer img, #mainSkills #gridContainer .row4 .imageSkillContainer img {
+#mainSkills #gridContainer .row1 .imageSkillContainer img, #mainSkills #gridContainer .row2 .imageSkillContainer img, #mainSkills #gridContainer .row3 .imageSkillContainer img, #mainSkills #gridContainer .row4 .imageSkillContainer img, #mainSkills #gridContainer .row5 .imageSkillContainer img, #mainSkills #gridContainer .row6 .imageSkillContainer img {
   grid-area: image;
   width: 30%;
-  margin: 3rem auto;
+  margin: 1.5rem auto;
   align-items: center;
   justify-content: center;
 }
 @media only screen and (min-device-width: 576px) and (max-device-width: 768px) {
-  #mainSkills #gridContainer .row1 .imageSkillContainer img, #mainSkills #gridContainer .row2 .imageSkillContainer img, #mainSkills #gridContainer .row3 .imageSkillContainer img, #mainSkills #gridContainer .row4 .imageSkillContainer img {
+  #mainSkills #gridContainer .row1 .imageSkillContainer img, #mainSkills #gridContainer .row2 .imageSkillContainer img, #mainSkills #gridContainer .row3 .imageSkillContainer img, #mainSkills #gridContainer .row4 .imageSkillContainer img, #mainSkills #gridContainer .row5 .imageSkillContainer img, #mainSkills #gridContainer .row6 .imageSkillContainer img {
     width: 35%;
   }
 }
 @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-  #mainSkills #gridContainer .row1 .imageSkillContainer img, #mainSkills #gridContainer .row2 .imageSkillContainer img, #mainSkills #gridContainer .row3 .imageSkillContainer img, #mainSkills #gridContainer .row4 .imageSkillContainer img {
+  #mainSkills #gridContainer .row1 .imageSkillContainer img, #mainSkills #gridContainer .row2 .imageSkillContainer img, #mainSkills #gridContainer .row3 .imageSkillContainer img, #mainSkills #gridContainer .row4 .imageSkillContainer img, #mainSkills #gridContainer .row5 .imageSkillContainer img, #mainSkills #gridContainer .row6 .imageSkillContainer img {
     width: 35%;
   }
 }
 @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
-  #mainSkills #gridContainer .row1 .imageSkillContainer img, #mainSkills #gridContainer .row2 .imageSkillContainer img, #mainSkills #gridContainer .row3 .imageSkillContainer img, #mainSkills #gridContainer .row4 .imageSkillContainer img {
+  #mainSkills #gridContainer .row1 .imageSkillContainer img, #mainSkills #gridContainer .row2 .imageSkillContainer img, #mainSkills #gridContainer .row3 .imageSkillContainer img, #mainSkills #gridContainer .row4 .imageSkillContainer img, #mainSkills #gridContainer .row5 .imageSkillContainer img, #mainSkills #gridContainer .row6 .imageSkillContainer img {
     width: 25%;
   }
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
-  #mainSkills #gridContainer .row1 .imageSkillContainer img, #mainSkills #gridContainer .row2 .imageSkillContainer img, #mainSkills #gridContainer .row3 .imageSkillContainer img, #mainSkills #gridContainer .row4 .imageSkillContainer img {
+  #mainSkills #gridContainer .row1 .imageSkillContainer img, #mainSkills #gridContainer .row2 .imageSkillContainer img, #mainSkills #gridContainer .row3 .imageSkillContainer img, #mainSkills #gridContainer .row4 .imageSkillContainer img, #mainSkills #gridContainer .row5 .imageSkillContainer img, #mainSkills #gridContainer .row6 .imageSkillContainer img {
     width: 25%;
   }
 }
-#mainSkills #gridContainer .row1 .skillDescriptionContainer, #mainSkills #gridContainer .row2 .skillDescriptionContainer, #mainSkills #gridContainer .row3 .skillDescriptionContainer, #mainSkills #gridContainer .row4 .skillDescriptionContainer {
+#mainSkills #gridContainer .row1 .skillDescriptionContainer, #mainSkills #gridContainer .row2 .skillDescriptionContainer, #mainSkills #gridContainer .row3 .skillDescriptionContainer, #mainSkills #gridContainer .row4 .skillDescriptionContainer, #mainSkills #gridContainer .row5 .skillDescriptionContainer, #mainSkills #gridContainer .row6 .skillDescriptionContainer {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
-#mainSkills #gridContainer .row1 .skillDescriptionContainer p, #mainSkills #gridContainer .row2 .skillDescriptionContainer p, #mainSkills #gridContainer .row3 .skillDescriptionContainer p, #mainSkills #gridContainer .row4 .skillDescriptionContainer p {
+#mainSkills #gridContainer .row1 .skillDescriptionContainer p, #mainSkills #gridContainer .row2 .skillDescriptionContainer p, #mainSkills #gridContainer .row3 .skillDescriptionContainer p, #mainSkills #gridContainer .row4 .skillDescriptionContainer p, #mainSkills #gridContainer .row5 .skillDescriptionContainer p, #mainSkills #gridContainer .row6 .skillDescriptionContainer p {
   grid-area: description;
   align-items: center;
   justify-content: center;
-  width: 50%;
+  width: 100%;
   font-size: 0.95rem;
   margin: 0 auto;
   letter-spacing: 0.05rem;
 }
 @media only screen and (min-device-width: 576px) and (max-device-width: 768px) {
-  #mainSkills #gridContainer .row1 .skillDescriptionContainer p, #mainSkills #gridContainer .row2 .skillDescriptionContainer p, #mainSkills #gridContainer .row3 .skillDescriptionContainer p, #mainSkills #gridContainer .row4 .skillDescriptionContainer p {
+  #mainSkills #gridContainer .row1 .skillDescriptionContainer p, #mainSkills #gridContainer .row2 .skillDescriptionContainer p, #mainSkills #gridContainer .row3 .skillDescriptionContainer p, #mainSkills #gridContainer .row4 .skillDescriptionContainer p, #mainSkills #gridContainer .row5 .skillDescriptionContainer p, #mainSkills #gridContainer .row6 .skillDescriptionContainer p {
     width: 75%;
   }
 }
 @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-  #mainSkills #gridContainer .row1 .skillDescriptionContainer p, #mainSkills #gridContainer .row2 .skillDescriptionContainer p, #mainSkills #gridContainer .row3 .skillDescriptionContainer p, #mainSkills #gridContainer .row4 .skillDescriptionContainer p {
+  #mainSkills #gridContainer .row1 .skillDescriptionContainer p, #mainSkills #gridContainer .row2 .skillDescriptionContainer p, #mainSkills #gridContainer .row3 .skillDescriptionContainer p, #mainSkills #gridContainer .row4 .skillDescriptionContainer p, #mainSkills #gridContainer .row5 .skillDescriptionContainer p, #mainSkills #gridContainer .row6 .skillDescriptionContainer p {
     width: 40rem;
     font-size: 1rem;
     letter-spacing: 0.1rem;
   }
 }
 @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
-  #mainSkills #gridContainer .row1 .skillDescriptionContainer p, #mainSkills #gridContainer .row2 .skillDescriptionContainer p, #mainSkills #gridContainer .row3 .skillDescriptionContainer p, #mainSkills #gridContainer .row4 .skillDescriptionContainer p {
+  #mainSkills #gridContainer .row1 .skillDescriptionContainer p, #mainSkills #gridContainer .row2 .skillDescriptionContainer p, #mainSkills #gridContainer .row3 .skillDescriptionContainer p, #mainSkills #gridContainer .row4 .skillDescriptionContainer p, #mainSkills #gridContainer .row5 .skillDescriptionContainer p, #mainSkills #gridContainer .row6 .skillDescriptionContainer p {
     width: 45rem;
     font-size: 1.2rem;
     letter-spacing: 0.12rem;
   }
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
-  #mainSkills #gridContainer .row1 .skillDescriptionContainer p, #mainSkills #gridContainer .row2 .skillDescriptionContainer p, #mainSkills #gridContainer .row3 .skillDescriptionContainer p, #mainSkills #gridContainer .row4 .skillDescriptionContainer p {
+  #mainSkills #gridContainer .row1 .skillDescriptionContainer p, #mainSkills #gridContainer .row2 .skillDescriptionContainer p, #mainSkills #gridContainer .row3 .skillDescriptionContainer p, #mainSkills #gridContainer .row4 .skillDescriptionContainer p, #mainSkills #gridContainer .row5 .skillDescriptionContainer p, #mainSkills #gridContainer .row6 .skillDescriptionContainer p {
     width: 50rem;
     font-size: 1.35rem;
     letter-spacing: 0.25rem;
@@ -747,30 +747,67 @@ html {
 }
 #mainContact form input[type=submit] {
   font-family: "Audiowide", cursive;
-  width: 20%;
-  font-size: 1.2rem;
-  color: #fff;
-  background: linear-gradient(90deg, #000000 0%, #ffffff 100%);
+  width: 25%;
   padding: 1rem 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: orange;
+  font-weight: bold;
   border: none;
-  box-shadow: rgba(0, 0, 0, 0.2) 0rem 1.2rem 2.8rem 0rem, rgba(0, 0, 0, 0.1) 0rem 0.2rem 0.4rem 0rem, rgba(255, 255, 255, 0.05) 0rem 0rem 0rem 0.1rem inset;
-  border-radius: 5rem;
-  transition: 2s;
-  transform: translateY(0);
-  display: flex;
-  text-align: center;
-  flex-direction: row;
-  align-items: center;
+  border-radius: 0.5rem;
+  letter-spacing: 0.4rem;
+  overflow: hidden;
+  transition: 0.5s;
   cursor: pointer;
   margin: 0 auto;
+  animation-name: bounce-in-zoomin;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+@keyframes bounce-in-zoomin {
+  0% {
+    transform: scale(7);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  35% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: scale(1.5);
+    animation-timing-function: ease-in;
+  }
+  70% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+  80% {
+    transform: scale(1.24);
+    animation-timing-function: ease-in;
+  }
+  90% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+  95% {
+    transform: scale(1.04);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
 }
 #mainContact form input[type=submit]:hover {
-  transition: 2s;
-  padding: 1rem 4.5rem;
-  transform: translateY(0px);
-  background: linear-gradient(90deg, #000000 0%, #ffffff 100%);
-  color: black;
-  border: solid 0.2rem #828282;
+  background: orange;
+  color: white;
+  box-shadow: 0 0 5px orange, 0 0 25px orange, 0 0 50px orange, 0 0 200px orange;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0, 0, 0.3333333333));
 }
 #mainContact form input, #mainContact form textarea, #mainContact form select {
   margin: 10px 0 0 0;
@@ -796,7 +833,8 @@ html {
   flex-direction: column;
   text-align: center;
   justify-content: end;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  padding-top: 4rem;
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
   #footer {
