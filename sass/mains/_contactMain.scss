@@ -1,6 +1,8 @@
+@use '../variables/variables';
+
 #mainContact {
     grid-area: main;
-    color: white;
+    color: variables.$p_color;
     width: 100vw;
     display: flex;
     flex-wrap: wrap;

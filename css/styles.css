@@ -506,7 +506,6 @@ html {
 }
 
 #mainSkills {
-  color: white;
   text-align: center;
   margin: 1rem auto;
 }
@@ -540,6 +539,7 @@ html {
   }
 }
 #mainSkills #gridContainer .row1 .skillNameContainer, #mainSkills #gridContainer .row2 .skillNameContainer, #mainSkills #gridContainer .row3 .skillNameContainer, #mainSkills #gridContainer .row4 .skillNameContainer, #mainSkills #gridContainer .row5 .skillNameContainer, #mainSkills #gridContainer .row6 .skillNameContainer {
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -610,6 +610,7 @@ html {
   text-align: center;
 }
 #mainSkills #gridContainer .row1 .skillDescriptionContainer p, #mainSkills #gridContainer .row2 .skillDescriptionContainer p, #mainSkills #gridContainer .row3 .skillDescriptionContainer p, #mainSkills #gridContainer .row4 .skillDescriptionContainer p, #mainSkills #gridContainer .row5 .skillDescriptionContainer p, #mainSkills #gridContainer .row6 .skillDescriptionContainer p {
+  color: white;
   grid-area: description;
   align-items: center;
   justify-content: center;

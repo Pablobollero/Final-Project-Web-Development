@@ -1,5 +1,6 @@
+@use '../variables/variables';
+
 #mainSkills {
-    color: white;
     text-align: center;
     margin: 1rem auto;
     // Grid container for skills descriptions
@@ -37,6 +38,7 @@
             ;
             }
             .skillNameContainer {
+                color: white;
                 display: flex;
                 align-items:center ;
                 justify-content: center;
@@ -90,6 +92,7 @@
                 justify-content: center;
                 text-align: center;
                 p {
+                    color: variables.$p_color;
                     grid-area: description;
                     align-items: center;
                     justify-content: center;

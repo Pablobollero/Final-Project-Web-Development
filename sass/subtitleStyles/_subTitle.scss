@@ -1,7 +1,9 @@
+@use '../variables/variables';
+
 #subTitle {
-    color: orange;
+    color: variables.$subTitle_color;
     letter-spacing: 0.50rem;
-    font-size: 1.90rem;
+    font-size: variables.$subTitle_size;
     text-align: center;
     width: 100vw;
     margin: 3rem auto;
