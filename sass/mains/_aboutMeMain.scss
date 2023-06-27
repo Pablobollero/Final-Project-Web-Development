@@ -3,33 +3,81 @@
 #mainAboutme {
     grid-area: main;
     display: block;
-    p {
-        color: variables.$p_color;
-        letter-spacing: 0.2rem;
-        font-size: 1rem;
-        text-align: center;
-        width: 75vw;
-        margin: 3rem auto;
-        background-color: rgba(black, 0.3);
-        @media only screen and (min-device-width: 576px) and (max-device-width: 768px)  {
-            font-size: 0.95rem;
+    #content {
+        width: 80%;
+        height: auto;
+        margin: auto;
+        padding: 1.5rem 0;
+        background: rgba(black, 0.3);
+        #desplegar{
+            display: none;
         }
-        @media only screen and (min-device-width: 769px) and (max-device-width: 1024px)  {
-            font-size: 1rem;
-        }
-        @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px)  {
-            font-size: 1.25rem;
-        }
-        @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
-            font-size: 1.50rem;
-        } 
-        #growingWord {
+        dl {
+            dt {
+            margin: 1rem auto;
             color: orange;
-            text-decoration: none;
-            transition: font-size 1s;
-            &:hover {
-                font-size: 3rem;
+            text-align: center;
             }
+            dd {
+            color: whitesmoke;
+            text-align: center;
+            }
+        }
+        p {
+            color: variables.$p_color;
+            letter-spacing: 0.2rem;
+            font-size: 1rem;
+            text-align: center;
+            width: 75vw;
+            margin: 1rem auto;
+            // background-color: rgba(black, 0.3);
+            @media only screen and (min-device-width: 426px) and (max-device-width: 768px)  {
+                font-size: 0.95rem;
+            }
+            @media only screen and (min-device-width: 769px) and (max-device-width: 1024px)  {
+                font-size: 1rem;
+            }
+            @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px)  {
+                font-size: 1.25rem;
+            }
+            @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
+                font-size: 1.50rem;
+            }
+            #growingWord {
+                color: orange;
+                text-decoration: none;
+                transition: font-size 1s;
+                &:hover {
+                    font-size: 3rem;
+                }
+            }
+        }
+        #mas, #menos {
+            text-decoration: none;
+        }
+        #mas {
+            color: greenyellow;
+            width: 100%;
+            text-align: center;
+            letter-spacing: 0.3rem;
+            display: inline-block;
+            text-shadow: 0 0 10px white,1px 1px  0 white;
+            animation: latidos 3s infinite;
+            transform-origin: center;
+        }
+        #menos {
+            color:red;
+            margin-left: 60%;
+            letter-spacing: 0.3rem;
+            display: inline-block;
+            text-shadow: 0 0 10px white,1px 1px  0 white;
+            animation: latidos 3s infinite;
+            transform-origin: right;
+        }
+        @keyframes latidos {
+            from { transform: none; }
+            50% { transform: scale(1.4); }
+            to { transform: none; }
         }
     }
 }
