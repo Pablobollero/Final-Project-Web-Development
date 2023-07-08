@@ -41,62 +41,31 @@ html {
   display: block;
 }
 #header .homePageIconContainer {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
-  margin-left: 44.5vw;
-  justify-content: baseline;
+  justify-content: center;
   align-items: center;
-}
-@media only screen and (min-device-width: 375px) and (max-device-width: 425px) {
-  #header .homePageIconContainer {
-    margin-left: 46vw;
-  }
-}
-@media only screen and (min-device-width: 576px) and (max-device-width: 768px) {
-  #header .homePageIconContainer {
-    margin-left: 47.2vw;
-  }
-}
-@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-  #header .homePageIconContainer {
-    margin-left: 47.75vw;
-  }
-}
-@media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
-  #header .homePageIconContainer {
-    margin-left: 48.2vw;
-  }
-}
-@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
-  #header .homePageIconContainer {
-    margin-left: 49vw;
-  }
 }
 #header .homePageIconContainer #homePageIcon {
   display: inline-block;
-  width: 2rem;
+  width: 8%;
   margin-top: 1rem;
   padding: 0.75rem;
   transition: width 1s;
 }
-@media only screen and (min-device-width: 576px) and (max-device-width: 768px) {
-  #header .homePageIconContainer #homePageIcon {
-    width: 2.75rem;
-  }
-}
-@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-  #header .homePageIconContainer #homePageIcon {
-    width: 3rem;
-  }
-}
-@media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
+@media only screen and (min-device-width: 426px) and (max-device-width: 1440px) {
   #header .homePageIconContainer #homePageIcon {
     width: 3.5rem;
   }
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
   #header .homePageIconContainer #homePageIcon {
-    width: 3.55rem;
+    width: 4rem;
+  }
+}
+@media only screen and (min-device-width: 2561px) {
+  #header .homePageIconContainer #homePageIcon {
+    width: 1.65%;
   }
 }
 #header .whereToStartMessage {
@@ -125,29 +94,14 @@ html {
 #header .lbl-toggle #Logo {
   height: 3.5rem;
   line-height: 3.5rem;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 900;
-  width: 100vw;
+  width: 100VW;
   text-align: center;
-}
-@media only screen and (min-device-width: 576px) and (max-device-width: 768px) {
-  #header .lbl-toggle #Logo {
-    font-size: 4rem;
-  }
-}
-@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-  #header .lbl-toggle #Logo {
-    font-size: 4rem;
-  }
-}
-@media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
-  #header .lbl-toggle #Logo {
-    font-size: 4rem;
-  }
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
   #header .lbl-toggle #Logo {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
 }
 #header .lbl-toggle #Logo span {
@@ -325,86 +279,68 @@ html {
   padding: 1.5rem 0;
   background: rgba(0, 0, 0, 0.3);
 }
-#mainAboutme #content #desplegar {
-  display: none;
-}
-#mainAboutme #content dl dt {
-  margin: 1rem auto;
-  color: orange;
-  text-align: center;
-}
-#mainAboutme #content dl dd {
-  color: whitesmoke;
-  text-align: center;
-}
-#mainAboutme #content p {
-  color: white;
-  letter-spacing: 0.2rem;
-  font-size: 1rem;
-  text-align: center;
-  width: 75vw;
-  margin: 1rem auto;
-}
-@media only screen and (min-device-width: 426px) and (max-device-width: 768px) {
-  #mainAboutme #content p {
-    font-size: 0.95rem;
-  }
-}
-@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-  #mainAboutme #content p {
-    font-size: 1rem;
-  }
-}
-@media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
-  #mainAboutme #content p {
-    font-size: 1.25rem;
-  }
-}
-@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
-  #mainAboutme #content p {
-    font-size: 1.5rem;
-  }
-}
-#mainAboutme #content p #growingWord {
+#mainAboutme #content .growingWord, #mainAboutme #content .touch {
   color: orange;
   text-decoration: none;
   transition: font-size 1s;
 }
-#mainAboutme #content p #growingWord:hover {
+#mainAboutme #content .growingWord:hover, #mainAboutme #content .touch:hover {
   font-size: 3rem;
 }
-#mainAboutme #content #mas, #mainAboutme #content #menos {
-  text-decoration: none;
-}
-#mainAboutme #content #mas {
-  color: greenyellow;
-  width: 100%;
+#mainAboutme #content #textoAboutme {
   text-align: center;
-  letter-spacing: 0.3rem;
-  display: inline-block;
-  text-shadow: 0 0 10px white, 1px 1px 0 white;
-  animation: latidos 3s infinite;
-  transform-origin: center;
 }
-#mainAboutme #content #menos {
+#mainAboutme #content #textoAboutme p {
+  color: white;
+  letter-spacing: 0.2rem;
+  font-size: 1rem;
+  width: 75vw;
+  margin: 1rem auto;
+}
+@media only screen and (min-device-width: 426px) and (max-device-width: 768px) {
+  #mainAboutme #content #textoAboutme p {
+    font-size: 0.95rem;
+  }
+}
+@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  #mainAboutme #content #textoAboutme p {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
+  #mainAboutme #content #textoAboutme p {
+    font-size: 1.25rem;
+  }
+}
+@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
+  #mainAboutme #content #textoAboutme p {
+    font-size: 1.5rem;
+  }
+}
+#mainAboutme #content #javaFalse {
+  text-align: left;
+  color: white;
+  letter-spacing: 0.2rem;
+  font-size: 1rem;
+  width: 75vw;
+  margin: 1rem auto;
+}
+#mainAboutme #content #javaFalse .let {
+  color: lightskyblue;
+}
+#mainAboutme #content #javaFalse .true {
+  color: limegreen;
+}
+#mainAboutme #content #javaFalse .false {
   color: red;
-  margin-left: 60%;
-  letter-spacing: 0.3rem;
-  display: inline-block;
-  text-shadow: 0 0 10px white, 1px 1px 0 white;
-  animation: latidos 3s infinite;
-  transform-origin: right;
 }
-@keyframes latidos {
-  from {
-    transform: none;
-  }
-  50% {
-    transform: scale(1.4);
-  }
-  to {
-    transform: none;
-  }
+#mainAboutme #content #javaFalse .alert {
+  color: yellow;
+}
+#mainAboutme #content .goodLuck {
+  color: white;
+  text-align: center;
+  padding: 2rem;
 }
 
 #mainMywork {

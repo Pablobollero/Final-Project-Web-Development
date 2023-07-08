@@ -3,44 +3,25 @@
     display: block;
     // Homepage icon container for About me, Contact, My work, and Skills pages.
     .homePageIconContainer {
-        display: inline-flex;
+        display: flex;
         flex-direction: column;
-        margin-left: 44.5vw;
-        justify-content: baseline;
+        justify-content: center;
         align-items: center;
-        @media only screen and (min-device-width: 375px) and (max-device-width: 425px)  {
-            margin-left: 46vw;
-        }
-        @media only screen and (min-device-width: 576px) and (max-device-width: 768px)  {
-            margin-left: 47.2vw;
-        }
-        @media only screen and (min-device-width: 769px) and (max-device-width: 1024px)  {
-            margin-left: 47.75vw;
-        }
-        @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px)  {
-            margin-left: 48.2vw;
-        }
-        @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
-            margin-left: 49vw;
-        }
         // Homepage Icon
         #homePageIcon {
             display: inline-block;
-            width: 2rem;
+            width: 8%;
             margin-top: 1rem;
             padding: 0.75rem;            
             transition: width 1s;
-            @media only screen and (min-device-width: 576px) and (max-device-width: 768px)  {
-                width: 2.75rem;
-            }
-            @media only screen and (min-device-width: 769px) and (max-device-width: 1024px)  {
-                width: 3rem;
-            }
-            @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px)  {
+            @media only screen and (min-device-width: 426px) and (max-device-width: 1440px)  {
                 width: 3.5rem;
             }
-            @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
-                width: 3.55rem;
+            @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px){
+                width: 4rem;
+            }
+            @media only screen and (min-device-width: 2561px){
+                width: 1.65%;
             }
         }
     }
@@ -72,21 +53,12 @@
         #Logo {
             height: 3.5rem;
             line-height: 3.5rem;
-            font-size: 3rem;
+            font-size: 4rem;
             font-weight: 900;
-            width: 100vw;
+            width: 100VW;
             text-align: center;
-            @media only screen and (min-device-width: 576px) and (max-device-width: 768px)  {
-                font-size: 4rem;
-            }
-            @media only screen and (min-device-width: 769px) and (max-device-width: 1024px)  {
-                font-size: 4rem;
-            }
-            @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px)  {
-                font-size: 4rem;
-            }
-            @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
-                font-size: 5rem;
+            @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px){
+                font-size: 4.5rem;
             }
             span {
                 display: inline-flex;
