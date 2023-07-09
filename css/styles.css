@@ -244,29 +244,24 @@ html {
   width: 100vw;
   margin: 3rem auto;
 }
-@media only screen and (min-device-width: 426px) and (max-device-width: 768px) {
+@media only screen and (min-device-width: 426px) and (max-device-width: 1024px) {
   #subTitle {
-    font-size: 2rem;
-  }
-}
-@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-  #subTitle {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
 }
 @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
   #subTitle {
-    font-size: 2.75rem;
+    font-size: 2.5rem;
   }
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
   #subTitle {
-    font-size: 4rem;
+    font-size: 2.5rem;
   }
 }
 @media only screen and (min-device-width: 2561px) {
   #subTitle {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 
