@@ -55,22 +55,22 @@ html {
 }
 @media only screen and (min-device-width: 426px) and (max-device-width: 768px) {
   #header .homePageIconContainer #homePageIcon {
-    width: 5rem;
+    width: 3.5rem;
   }
 }
 @media only screen and (min-device-width: 769px) and (max-device-width: 1440px) {
   #header .homePageIconContainer #homePageIcon {
-    width: 6rem;
+    width: 4rem;
   }
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
   #header .homePageIconContainer #homePageIcon {
-    width: 6.5rem;
+    width: 4.5rem;
   }
 }
 @media only screen and (min-device-width: 2561px) {
   #header .homePageIconContainer #homePageIcon {
-    width: 7rem;
+    width: 5rem;
   }
 }
 #header .whereToStartMessage {
@@ -125,37 +125,30 @@ html {
   text-align: center;
   margin-bottom: 1rem;
 }
-@media only screen and (min-device-width: 426px) and (max-device-width: 768px) {
+@media only screen and (min-device-width: 426px) and (max-device-width: 1024px) {
   #header .lbl-toggle #Logo {
-    font-size: 4.25rem;
-    height: 5rem;
-    line-height: 5rem;
-  }
-}
-@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-  #header .lbl-toggle #Logo {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     height: 5rem;
     line-height: 5rem;
   }
 }
 @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
   #header .lbl-toggle #Logo {
-    font-size: 5rem;
+    font-size: 4rem;
     height: 6rem;
     line-height: 6rem;
   }
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
   #header .lbl-toggle #Logo {
-    font-size: 5.5rem;
+    font-size: 4rem;
     height: 6.5rem;
     line-height: 6.5rem;
   }
 }
 @media only screen and (min-device-width: 2561px) {
   #header .lbl-toggle #Logo {
-    font-size: 5.75rem;
+    font-size: 5rem;
     height: 7rem;
     line-height: 7rem;
   }
@@ -195,29 +188,19 @@ html {
   font-size: 1rem;
   transition: font-size 1s;
 }
-@media only screen and (min-device-width: 426px) and (max-device-width: 768px) {
+@media only screen and (min-device-width: 426px) and (max-device-width: 1024px) {
   #header .dropdown-content .content-inner li a {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
-@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 1025px) and (max-device-width: 2560px) {
   #header .dropdown-content .content-inner li a {
-    font-size: 1.6rem;
-  }
-}
-@media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
-  #header .dropdown-content .content-inner li a {
-    font-size: 1.65rem;
-  }
-}
-@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
-  #header .dropdown-content .content-inner li a {
-    font-size: 2rem;
+    font-size: 1.45rem;
   }
 }
 @media only screen and (min-device-width: 2561px) {
   #header .dropdown-content .content-inner li a {
-    font-size: 3.25rem;
+    font-size: 1.75rem;
   }
 }
 #header .dropdown-content .content-inner li a:link {
@@ -230,29 +213,19 @@ html {
   color: whitesmoke;
   font-size: -0.75rem;
 }
-@media only screen and (min-device-width: 426px) and (max-device-width: 768px) {
+@media only screen and (min-device-width: 426px) and (max-device-width: 1024px) {
   #header .dropdown-content .content-inner li a:hover {
-    font-size: 0.25rem;
+    font-size: 1rem;
   }
 }
-@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 1025px) and (max-device-width: 2560px) {
   #header .dropdown-content .content-inner li a:hover {
-    font-size: 0.75rem;
-  }
-}
-@media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
-  #header .dropdown-content .content-inner li a:hover {
-    font-size: 1.25rem;
-  }
-}
-@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
-  #header .dropdown-content .content-inner li a:hover {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 @media only screen and (min-device-width: 2561px) {
   #header .dropdown-content .content-inner li a:hover {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 }
 #header .dropdown-content .content-inner li a:active {
@@ -304,7 +277,7 @@ html {
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  padding-top: 3rem;
+  padding-top: 2rem;
   gap: 1rem;
 }
 #mainIndex .proffession {
@@ -387,6 +360,31 @@ html {
   text-align: center;
   justify-content: center;
 }
+@media only screen and (min-device-width: 425px) and (max-device-width: 768px) {
+  #mainAboutme {
+    margin-top: 4rem;
+  }
+}
+@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  #mainAboutme {
+    margin-top: 1.25rem;
+  }
+}
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
+  #mainAboutme {
+    margin-top: 2rem;
+  }
+}
+@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
+  #mainAboutme {
+    margin-top: 8rem;
+  }
+}
+@media only screen and (min-device-width: 2561px) {
+  #mainAboutme {
+    margin-top: 20rem;
+  }
+}
 #mainAboutme #content {
   display: flex;
   flex-direction: column;
@@ -395,7 +393,7 @@ html {
   max-width: 1900px;
   height: auto;
   margin: 0 auto;
-  padding: 0 4rem;
+  padding: 4rem;
   background: rgba(0, 0, 0, 0.3);
 }
 #mainAboutme #content .growingWord, #mainAboutme #content .touch {
@@ -421,24 +419,38 @@ html {
     font-size: 1.25rem;
   }
 }
+@media only screen and (min-device-width: 426px) and (max-device-width: 768px) {
+  #mainAboutme #content #textoAboutme p {
+    font-size: 1.25rem;
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  #mainAboutme #content #textoAboutme p {
+    font-size: 1.25rem;
+    width: 55%;
+    margin: 0 auto;
+  }
+}
 @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
   #mainAboutme #content #textoAboutme p {
     font-size: 1.25rem;
-    width: 65%;
+    width: 40%;
     margin: 0 auto;
   }
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
   #mainAboutme #content #textoAboutme p {
     font-size: 1.75rem;
-    width: 75%;
+    width: 45%;
     margin: 0 auto;
   }
 }
 @media only screen and (min-device-width: 2561px) {
   #mainAboutme #content #textoAboutme p {
     font-size: 2.5rem;
-    width: 100%;
+    width: 65%;
     margin: 0 auto;
   }
 }
@@ -465,25 +477,25 @@ html {
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   #mainAboutme #content #javaFalse {
     font-size: 1.25rem;
-    width: 60vw;
+    width: 40vw;
   }
 }
 @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
   #mainAboutme #content #javaFalse {
     font-size: 1.25rem;
-    width: 55vw;
+    width: 35vw;
   }
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
   #mainAboutme #content #javaFalse {
     font-size: 1.75rem;
-    width: 45vw;
+    width: 25vw;
   }
 }
 @media only screen and (min-device-width: 2561px) {
   #mainAboutme #content #javaFalse {
     font-size: 2.5rem;
-    width: 40vw;
+    width: 20vw;
   }
 }
 #mainAboutme #content .goodLuck {
@@ -516,6 +528,31 @@ html {
   flex-direction: column;
   text-align: center;
   justify-content: center;
+}
+@media only screen and (min-device-width: 425px) and (max-device-width: 768px) {
+  #mainMywork {
+    margin-top: 4rem;
+  }
+}
+@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  #mainMywork {
+    margin-top: 1.25rem;
+  }
+}
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
+  #mainMywork {
+    margin-top: 2rem;
+  }
+}
+@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
+  #mainMywork {
+    margin-top: 8rem;
+  }
+}
+@media only screen and (min-device-width: 2561px) {
+  #mainMywork {
+    margin-top: 20rem;
+  }
 }
 #mainMywork h3 {
   color: white;
@@ -687,7 +724,31 @@ html {
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  margin: 1rem auto;
+}
+@media only screen and (min-device-width: 425px) and (max-device-width: 768px) {
+  #mainSkills {
+    margin-top: 4rem;
+  }
+}
+@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  #mainSkills {
+    margin-top: 1.25rem;
+  }
+}
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
+  #mainSkills {
+    margin-top: 2rem;
+  }
+}
+@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
+  #mainSkills {
+    margin-top: 8rem;
+  }
+}
+@media only screen and (min-device-width: 2561px) {
+  #mainSkills {
+    margin-top: 20rem;
+  }
 }
 #mainSkills #gridContainer .row1, #mainSkills #gridContainer .row2, #mainSkills #gridContainer .row3, #mainSkills #gridContainer .row4, #mainSkills #gridContainer .row5, #mainSkills #gridContainer .row6 {
   margin: 2rem auto;
@@ -886,6 +947,31 @@ html {
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
+}
+@media only screen and (min-device-width: 425px) and (max-device-width: 768px) {
+  #mainContact {
+    margin-top: 4rem;
+  }
+}
+@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  #mainContact {
+    margin-top: 1.25rem;
+  }
+}
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
+  #mainContact {
+    margin-top: 2rem;
+  }
+}
+@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
+  #mainContact {
+    margin-top: 8rem;
+  }
+}
+@media only screen and (min-device-width: 2561px) {
+  #mainContact {
+    margin-top: 20rem;
+  }
 }
 #mainContact p {
   font-size: 1.05rem;
