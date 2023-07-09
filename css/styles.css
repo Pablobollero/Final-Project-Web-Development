@@ -74,7 +74,6 @@ html {
 #header {
   grid-area: header;
   display: block;
-  background-color: pink;
 }
 #header .homePageIconContainer {
   display: flex;
@@ -84,7 +83,7 @@ html {
 }
 #header .homePageIconContainer #homePageIcon {
   display: inline-block;
-  width: 4rem;
+  width: 3rem;
   margin-top: 1rem;
   padding: 0.75rem;
   transition: width 1s;
@@ -155,7 +154,7 @@ html {
 #header .lbl-toggle #Logo {
   height: 4rem;
   line-height: 4rem;
-  font-size: 4rem;
+  font-size: 3.25rem;
   font-weight: 900;
   width: 100VW;
   text-align: center;
@@ -191,7 +190,7 @@ html {
 }
 @media only screen and (min-device-width: 2561px) {
   #header .lbl-toggle #Logo {
-    font-size: 8rem;
+    font-size: 6.5rem;
     height: 7rem;
     line-height: 7rem;
   }
@@ -253,7 +252,7 @@ html {
 }
 @media only screen and (min-device-width: 2561px) {
   #header .dropdown-content .content-inner li a {
-    font-size: 3rem;
+    font-size: 3.25rem;
   }
 }
 #header .dropdown-content .content-inner li a:link {
@@ -295,7 +294,7 @@ html {
   color: whitesmoke;
 }
 #header .toggle:checked + .lbl-toggle + .dropdown-content {
-  max-height: 20rem;
+  max-height: 22rem;
   overflow: hidden;
 }
 
@@ -307,7 +306,7 @@ html {
   width: 100vw;
   margin: 3rem auto;
 }
-@media only screen and (min-device-width: 576px) and (max-device-width: 768px) {
+@media only screen and (min-device-width: 426px) and (max-device-width: 768px) {
   #subTitle {
     font-size: 2rem;
   }
@@ -320,13 +319,16 @@ html {
 @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
   #subTitle {
     font-size: 2.75rem;
-    margin: 8rem auto;
   }
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
   #subTitle {
     font-size: 4rem;
-    margin: 10rem auto 7rem auto;
+  }
+}
+@media only screen and (min-device-width: 2561px) {
+  #subTitle {
+    font-size: 4rem;
   }
 }
 
@@ -484,22 +486,28 @@ html {
 #mainAboutme #content #javaFalse .alert {
   color: yellow;
 }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #mainAboutme #content #javaFalse {
+    font-size: 1.25rem;
+    width: 60vw;
+  }
+}
 @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
   #mainAboutme #content #javaFalse {
     font-size: 1.25rem;
-    width: 35vw;
+    width: 55vw;
   }
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
   #mainAboutme #content #javaFalse {
     font-size: 1.75rem;
-    width: 25vw;
+    width: 45vw;
   }
 }
 @media only screen and (min-device-width: 2561px) {
   #mainAboutme #content #javaFalse {
     font-size: 2.5rem;
-    width: 15vw;
+    width: 40vw;
   }
 }
 #mainAboutme #content .goodLuck {

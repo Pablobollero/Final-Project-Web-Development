@@ -1,7 +1,6 @@
 #header {
     grid-area: header;
     display: block;
-    background-color: pink;    
     // Homepage icon container for About me, Contact, My work, and Skills pages.
     .homePageIconContainer {
         display: flex;
@@ -11,7 +10,7 @@
         // Homepage Icon
         #homePageIcon {
             display: inline-block;
-            width: 4rem;
+            width: 3rem;
             margin-top: 1rem;
             padding: 0.75rem;            
             transition: width 1s;
@@ -69,7 +68,7 @@
         #Logo {
             height: 4rem;
             line-height: 4rem;
-            font-size: 4rem;
+            font-size: 3.25rem;
             font-weight: 900;
             width: 100VW;
             text-align: center;
@@ -95,7 +94,7 @@
                 line-height: 6.5rem;
             }
             @media only screen and (min-device-width: 2561px) {
-                font-size: 8rem;
+                font-size: 6.5rem;
                 height: 7rem;
                 line-height: 7rem;
             }
@@ -146,7 +145,7 @@
                         font-size: 2rem;
                     }
                     @media only screen and (min-device-width: 2561px)  {
-                        font-size: 3rem;
+                        font-size: 3.25rem;
                     }
                     &:link {
                         color: whitesmoke;
@@ -182,7 +181,7 @@
     }
     //Dropdown content height
     .toggle:checked+.lbl-toggle+.dropdown-content {
-        max-height: 20rem;
+        max-height: 22rem;
         overflow: hidden;
     }
 }
