@@ -7,6 +7,21 @@
     justify-content: center;
     padding-top: 2rem;
     gap: 1rem;
+    @media only screen and (min-device-width: 425px) and (max-device-width: 768px)  {
+        padding-top: 20rem;
+    }
+    @media only screen and (min-device-width: 769px) and (max-device-width: 1024px)  {
+        padding-top: 20rem;
+    }
+    @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px)  {
+        padding-top: 20rem;
+    }
+    @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
+        padding-top: 20rem;
+    }
+    @media only screen and (min-device-width: 2561px)  {
+        padding-top: 50rem;
+    }
     .proffession {
         display: flex;
         color: rgb(236, 236, 236);
@@ -27,7 +42,7 @@
             font-size: 3rem;
         }
         @media only screen and (min-device-width: 2561px)  {
-            font-size: 10rem;
+            font-size: 6rem;
         }
     }
     p {
@@ -40,7 +55,7 @@
         letter-spacing: 0.28rem;
         @media only screen and (min-device-width: 576px) and (max-device-width: 768px)  {
             font-size: 1.25rem;
-            width: 55%;
+            width: 50%;
         }
         @media only screen and (min-device-width: 769px) and (max-device-width: 1024px)  {
             font-size: 1.30rem;
@@ -48,14 +63,14 @@
         }
         @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px)  {
             font-size: 1.20rem;
-            width: 35%;
+            width: 30%;
         }
         @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
             font-size: 1.75rem;
             width: 30%;
         }
         @media only screen and (min-device-width: 2561px)  {
-            font-size: 3rem;
+            font-size: 2rem;
             width: 15%;
         }
     }

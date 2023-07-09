@@ -280,6 +280,31 @@ html {
   padding-top: 2rem;
   gap: 1rem;
 }
+@media only screen and (min-device-width: 425px) and (max-device-width: 768px) {
+  #mainIndex {
+    padding-top: 20rem;
+  }
+}
+@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  #mainIndex {
+    padding-top: 20rem;
+  }
+}
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
+  #mainIndex {
+    padding-top: 20rem;
+  }
+}
+@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
+  #mainIndex {
+    padding-top: 20rem;
+  }
+}
+@media only screen and (min-device-width: 2561px) {
+  #mainIndex {
+    padding-top: 50rem;
+  }
+}
 #mainIndex .proffession {
   display: flex;
   color: rgb(236, 236, 236);
@@ -310,7 +335,7 @@ html {
 }
 @media only screen and (min-device-width: 2561px) {
   #mainIndex .proffession {
-    font-size: 10rem;
+    font-size: 6rem;
   }
 }
 #mainIndex p {
@@ -325,7 +350,7 @@ html {
 @media only screen and (min-device-width: 576px) and (max-device-width: 768px) {
   #mainIndex p {
     font-size: 1.25rem;
-    width: 55%;
+    width: 50%;
   }
 }
 @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
@@ -337,7 +362,7 @@ html {
 @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
   #mainIndex p {
     font-size: 1.2rem;
-    width: 35%;
+    width: 30%;
   }
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
@@ -348,7 +373,7 @@ html {
 }
 @media only screen and (min-device-width: 2561px) {
   #mainIndex p {
-    font-size: 3rem;
+    font-size: 2rem;
     width: 15%;
   }
 }
