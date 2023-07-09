@@ -302,7 +302,7 @@ html {
 }
 @media only screen and (min-device-width: 2561px) {
   #mainIndex {
-    padding-top: 50rem;
+    padding-top: 45rem;
   }
 }
 #mainIndex .proffession {
@@ -1224,12 +1224,12 @@ html {
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
   #footer .footerContainer .footerList li .instagram {
-    width: 4.25rem;
+    width: 3.4rem;
   }
 }
 @media only screen and (min-device-width: 2561px) {
   #footer .footerContainer .footerList li .instagram {
-    width: 6.25rem;
+    width: 4.5rem;
   }
 }
 #footer .footerContainer .footerList li .gitHub {
@@ -1247,12 +1247,12 @@ html {
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
   #footer .footerContainer .footerList li .gitHub {
-    width: 7.5rem;
+    width: 5.5rem;
   }
 }
 @media only screen and (min-device-width: 2561px) {
   #footer .footerContainer .footerList li .gitHub {
-    width: 10rem;
+    width: 7.75rem;
   }
 }
 #footer .nameSurname {
