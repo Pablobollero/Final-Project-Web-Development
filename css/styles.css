@@ -19,7 +19,7 @@ html {
   width: 100vw;
   display: grid;
   grid-template-areas: "header" "main" "footer";
-  grid-template-rows: auto;
+  grid-template-rows: 15rem auto auto;
 }
 
 #bodyPages {
@@ -33,7 +33,7 @@ html {
   width: 100vw;
   display: grid;
   grid-template-areas: "header" "main" "footer";
-  grid-template-rows: auto;
+  grid-template-rows: 15rem auto auto;
 }
 
 #header {
