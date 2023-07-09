@@ -192,22 +192,22 @@ html {
 #header .dropdown-content .content-inner li a {
   text-decoration: none;
   letter-spacing: 0.5em;
-  font-size: 1.25rem;
+  font-size: 1rem;
   transition: font-size 1s;
 }
 @media only screen and (min-device-width: 426px) and (max-device-width: 768px) {
   #header .dropdown-content .content-inner li a {
-    font-size: 1.85rem;
+    font-size: 1.5rem;
   }
 }
 @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
   #header .dropdown-content .content-inner li a {
-    font-size: 1.9rem;
+    font-size: 1.6rem;
   }
 }
 @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
   #header .dropdown-content .content-inner li a {
-    font-size: 1.95rem;
+    font-size: 1.65rem;
   }
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
@@ -304,7 +304,7 @@ html {
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  padding-top: 4rem;
+  padding-top: 3rem;
   gap: 1rem;
 }
 #mainIndex .proffession {
