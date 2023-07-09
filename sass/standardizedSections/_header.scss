@@ -10,21 +10,21 @@
         // Homepage Icon
         #homePageIcon {
             display: inline-block;
-            width: 3rem;
+            width: 2rem;
             margin-top: 1rem;
             padding: 0.75rem;            
             transition: width 1s;
             @media only screen and (min-device-width: 426px) and (max-device-width: 768px) {
-                width: 3.5rem;
+                width: 2.5rem;
             }
             @media only screen and (min-device-width: 769px) and (max-device-width: 1440px) {
-                width: 4rem;
+                width: 3rem;
             }
             @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
-                width: 4.5rem;
+                width: 3.5rem;
             }
             @media only screen and (min-device-width: 2561px){
-                width: 5rem;
+                width: 4rem;
             }
         }
     }
