@@ -1,6 +1,7 @@
 #header {
     grid-area: header;
     display: block;
+    background-color: pink;    
     // Homepage icon container for About me, Contact, My work, and Skills pages.
     .homePageIconContainer {
         display: flex;
@@ -10,27 +11,21 @@
         // Homepage Icon
         #homePageIcon {
             display: inline-block;
-            width: 8%;
+            width: 4rem;
             margin-top: 1rem;
             padding: 0.75rem;            
             transition: width 1s;
-            @media only screen and (min-device-width: 325px) and (max-device-width: 425px)  {
-                width: 8%;
+            @media only screen and (min-device-width: 426px) and (max-device-width: 768px) {
+                width: 5rem;
             }
-            @media only screen and (min-device-width: 426px) and (max-device-width: 768px)  {
-                width: 4%;
+            @media only screen and (min-device-width: 769px) and (max-device-width: 1440px) {
+                width: 6rem;
             }
-            @media only screen and (min-device-width: 769px) and (max-device-width: 1024px)  {
-                width: 4%;
-            }
-            @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px)  {
-                width: 3%;
-            }
-            @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px){
-                width: 1.5%;
+            @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
+                width: 6.5rem;
             }
             @media only screen and (min-device-width: 2561px){
-                width: 1%;
+                width: 7rem;
             }
         }
     }
@@ -45,10 +40,10 @@
             font-size: 1rem;
             width: 100vw;
             text-align: center;
-            @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px){
+            @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
                 font-size: 2rem;
             }
-            @media only screen and (min-device-width: 2561px){
+            @media only screen and (min-device-width: 2561px) {
                 font-size: 3rem;
             }
         }
@@ -56,10 +51,10 @@
             width: 100vw;
             text-align: center;
             font-size: 2rem;
-            @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px){
+            @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
                 font-size: 4rem;
             }
-            @media only screen and (min-device-width: 2561px){
+            @media only screen and (min-device-width: 2561px) {
                 font-size: 6rem;
             }
         }
@@ -79,7 +74,7 @@
             width: 100VW;
             text-align: center;
             margin-bottom: 1rem;
-            @media only screen and (min-device-width: 425px) and (max-device-width: 768px) {
+            @media only screen and (min-device-width: 426px) and (max-device-width: 768px) {
                 font-size: 4.25rem;
                 height: 5rem;
                 line-height: 5rem;
@@ -94,12 +89,12 @@
                 height: 6rem;
                 line-height: 6rem;
             }
-            @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
+            @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
                 font-size: 5.5rem;
                 height: 6.5rem;
                 line-height: 6.5rem;
             }
-            @media only screen and (min-device-width: 2561px)  {
+            @media only screen and (min-device-width: 2561px) {
                 font-size: 8rem;
                 height: 7rem;
                 line-height: 7rem;
@@ -125,7 +120,7 @@
         position: relative;
         overflow: hidden;
         transition: max-height .50s ease-in-out;
-        margin-top: -2rem;
+        margin: -2rem auto auto 0.5rem;
         .content-inner {
             width: 100vw;
             text-align: center;
@@ -136,16 +131,16 @@
                 a {
                     text-decoration: none;
                     letter-spacing: 0.5em;
-                    font-size: 1rem;
+                    font-size: 1.75rem;
                     transition: font-size 1s;
-                    @media only screen and (min-device-width: 425px) and (max-device-width: 768px) {
-                        font-size: 1.25rem;
+                    @media only screen and (min-device-width: 426px) and (max-device-width: 768px) {
+                        font-size: 1.85rem;
                     }
                     @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-                        font-size: 1.5rem;
+                        font-size: 1.90rem;
                     }
                     @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
-                        font-size: 1.75rem;
+                        font-size: 1.95rem;
                     }
                     @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
                         font-size: 2rem;
@@ -162,7 +157,7 @@
                     &:hover {
                         color: whitesmoke;
                         font-size: -0.75rem;
-                        @media only screen and (min-device-width: 425px) and (max-device-width: 768px) {
+                        @media only screen and (min-device-width: 426px) and (max-device-width: 768px) {
                             font-size: 0.25rem;
                         }
                         @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {

@@ -19,7 +19,17 @@ html {
   width: 100vw;
   display: grid;
   grid-template-areas: "header" "main" "footer";
-  grid-template-rows: 20% 60% 20%;
+  grid-template-rows: 30rem 60% 20%;
+}
+@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
+  #bodyIndex {
+    grid-template-rows: 35rem auto 10%;
+  }
+}
+@media only screen and (min-device-width: 2561px) {
+  #bodyIndex {
+    grid-template-rows: 45rem auto 10%;
+  }
 }
 
 #bodyPages {
@@ -33,12 +43,38 @@ html {
   width: 100vw;
   display: grid;
   grid-template-areas: "header" "main" "footer";
-  grid-template-rows: 17rem auto 10%;
+  grid-template-rows: 30rem auto 10%;
+}
+@media only screen and (min-device-width: 426px) and (max-device-width: 768px) {
+  #bodyPages {
+    grid-template-rows: 35rem auto 10%;
+  }
+}
+@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  #bodyPages {
+    grid-template-rows: 40rem auto 10%;
+  }
+}
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
+  #bodyPages {
+    grid-template-rows: 45rem auto 10%;
+  }
+}
+@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
+  #bodyPages {
+    grid-template-rows: 50rem auto 10%;
+  }
+}
+@media only screen and (min-device-width: 2561px) {
+  #bodyPages {
+    grid-template-rows: 55rem auto 10%;
+  }
 }
 
 #header {
   grid-area: header;
   display: block;
+  background-color: pink;
 }
 #header .homePageIconContainer {
   display: flex;
@@ -48,39 +84,29 @@ html {
 }
 #header .homePageIconContainer #homePageIcon {
   display: inline-block;
-  width: 8%;
+  width: 4rem;
   margin-top: 1rem;
   padding: 0.75rem;
   transition: width 1s;
 }
-@media only screen and (min-device-width: 325px) and (max-device-width: 425px) {
-  #header .homePageIconContainer #homePageIcon {
-    width: 8%;
-  }
-}
 @media only screen and (min-device-width: 426px) and (max-device-width: 768px) {
   #header .homePageIconContainer #homePageIcon {
-    width: 4%;
+    width: 5rem;
   }
 }
-@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 769px) and (max-device-width: 1440px) {
   #header .homePageIconContainer #homePageIcon {
-    width: 4%;
-  }
-}
-@media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
-  #header .homePageIconContainer #homePageIcon {
-    width: 3%;
+    width: 6rem;
   }
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
   #header .homePageIconContainer #homePageIcon {
-    width: 1.5%;
+    width: 6.5rem;
   }
 }
 @media only screen and (min-device-width: 2561px) {
   #header .homePageIconContainer #homePageIcon {
-    width: 1%;
+    width: 7rem;
   }
 }
 #header .whereToStartMessage {
@@ -135,7 +161,7 @@ html {
   text-align: center;
   margin-bottom: 1rem;
 }
-@media only screen and (min-device-width: 425px) and (max-device-width: 768px) {
+@media only screen and (min-device-width: 426px) and (max-device-width: 768px) {
   #header .lbl-toggle #Logo {
     font-size: 4.25rem;
     height: 5rem;
@@ -188,7 +214,7 @@ html {
   position: relative;
   overflow: hidden;
   transition: max-height 0.5s ease-in-out;
-  margin-top: -2rem;
+  margin: -2rem auto auto 0.5rem;
 }
 #header .dropdown-content .content-inner {
   width: 100vw;
@@ -202,22 +228,22 @@ html {
 #header .dropdown-content .content-inner li a {
   text-decoration: none;
   letter-spacing: 0.5em;
-  font-size: 1rem;
+  font-size: 1.75rem;
   transition: font-size 1s;
 }
-@media only screen and (min-device-width: 425px) and (max-device-width: 768px) {
+@media only screen and (min-device-width: 426px) and (max-device-width: 768px) {
   #header .dropdown-content .content-inner li a {
-    font-size: 1.25rem;
+    font-size: 1.85rem;
   }
 }
 @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
   #header .dropdown-content .content-inner li a {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
   }
 }
 @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
   #header .dropdown-content .content-inner li a {
-    font-size: 1.75rem;
+    font-size: 1.95rem;
   }
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
@@ -240,7 +266,7 @@ html {
   color: whitesmoke;
   font-size: -0.75rem;
 }
-@media only screen and (min-device-width: 425px) and (max-device-width: 768px) {
+@media only screen and (min-device-width: 426px) and (max-device-width: 768px) {
   #header .dropdown-content .content-inner li a:hover {
     font-size: 0.25rem;
   }
@@ -311,6 +337,7 @@ html {
   flex-direction: column;
   text-align: center;
   justify-content: center;
+  gap: 1rem;
   margin: 7rem auto;
 }
 #mainIndex .proffession {
@@ -328,22 +355,17 @@ html {
 }
 @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
   #mainIndex .proffession {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
   #mainIndex .proffession {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
   }
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
   #mainIndex .proffession {
-    font-size: 5rem;
-  }
-}
-@media only screen and (min-device-width: 2561px) {
-  #mainIndex .proffession {
-    font-size: 10rem;
+    font-size: 4rem;
   }
 }
 #mainIndex p {
@@ -351,8 +373,7 @@ html {
   width: 22rem;
   color: rgb(236, 236, 236);
   text-align: center;
-  margin-top: 6rem;
-  padding: 2rem;
+  margin: 3rem auto auto auto;
   font-size: 1rem;
   letter-spacing: 0.28rem;
 }
@@ -364,27 +385,20 @@ html {
 }
 @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
   #mainIndex p {
-    font-size: 1rem;
+    font-size: 1.3rem;
     width: 40%;
   }
 }
 @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
   #mainIndex p {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     width: 35%;
   }
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
   #mainIndex p {
-    font-size: 2.5rem;
+    font-size: 1.75rem;
     width: 30%;
-  }
-}
-@media only screen and (min-device-width: 2561px) {
-  #mainIndex p {
-    font-size: 3.5rem;
-    width: 30%;
-    margin-top: 15rem;
   }
 }
 
@@ -394,27 +408,6 @@ html {
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  margin-top: 2rem;
-}
-@media only screen and (min-device-width: 325px) and (max-device-width: 425px) {
-  #mainAboutme {
-    margin-top: 6rem;
-  }
-}
-@media only screen and (min-device-width: 426px) and (max-device-width: 1440px) {
-  #mainAboutme {
-    margin-top: 10Rem;
-  }
-}
-@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
-  #mainAboutme {
-    margin-top: 6rem;
-  }
-}
-@media only screen and (min-device-width: 2561px) {
-  #mainAboutme {
-    margin-top: -75rem;
-  }
 }
 #mainAboutme #content {
   display: flex;
@@ -909,7 +902,6 @@ html {
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  margin: -4rem auto;
 }
 #mainContact p {
   font-size: 1.05rem;
