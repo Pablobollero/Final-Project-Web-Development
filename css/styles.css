@@ -698,40 +698,40 @@ html {
   margin-top: 1rem;
   color: white;
   text-align: center;
-  width: 10rem;
   height: 10rem;
+  width: 10rem;
   object-fit: cover;
   border-radius: 1rem;
   justify-content: center;
 }
 @media only screen and (min-device-width: 576px) and (max-device-width: 768px) {
   #mainMywork .gallery figure img {
-    width: 12rem;
     height: 12rem;
+    width: 12rem;
   }
 }
 @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
   #mainMywork .gallery figure img {
-    width: 14rem;
     height: 14rem;
+    width: 14rem;
   }
 }
 @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
   #mainMywork .gallery figure img {
-    width: 16rem;
     height: 16rem;
+    width: 16rem;
   }
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
   #mainMywork .gallery figure img {
-    width: 22.75rem;
     height: 22.75rem;
+    width: 22.75rem;
   }
 }
 @media only screen and (min-device-width: 2561px) {
   #mainMywork .gallery figure img {
-    width: 30rem;
     height: 30rem;
+    width: 30rem;
     transition: width 1s;
   }
   #mainMywork .gallery figure img:hover {
