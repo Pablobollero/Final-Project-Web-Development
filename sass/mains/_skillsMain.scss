@@ -1,7 +1,10 @@
 @use '../variables/variables';
 
 #mainSkills {
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    justify-content: center;
     margin: 1rem auto;
     // Grid container for skills descriptions
     #gridContainer {
@@ -19,23 +22,28 @@
             ;
             @media only screen and (min-device-width: 576px) and (max-device-width: 768px)  {
                 grid-template-areas:
-            'skill image description'
-            ;
+            'skill image description';
+            width: 75%;
             }
             @media only screen and (min-device-width: 769px) and (max-device-width: 1024px)  {
                 grid-template-areas:
-            'skill image description' 
-            ;
+            'skill image description';
+            width: 75%;
             }
             @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px)  {
                 grid-template-areas:
-            'skill image description' 
-            ;
+            'skill image description';
+            width: 65%;
             }
             @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
                 grid-template-areas:
-            'skill image description' 
-            ;
+            'skill image description';
+            width: 65%;
+            }
+            @media only screen and (min-device-width: 2561px)  {
+                grid-template-areas:
+            'skill image description';
+            width: 65%;
             }
             .skillNameContainer {
                 color: white;
@@ -43,6 +51,21 @@
                 align-items:center ;
                 justify-content: center;
                 text-align: center;
+                @media only screen and (min-device-width: 576px) and (max-device-width: 1024px)   {
+                    width: 10rem;
+                }
+                @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px)  {
+                    width: 15rem;
+                    justify-content: left;
+                }
+                @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
+                    width: 20rem;
+                    justify-content: left;
+                }
+                @media only screen and (min-device-width: 2561px)  {
+                    width: 30rem;
+                    justify-content: left;
+                }
                 h3 {
                 grid-area: skill;
                 font-size: 1rem;
@@ -57,7 +80,10 @@
                     font-size: 1.25rem;
                 }
                 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
-                    font-size: 1.5rem;
+                    font-size: 2rem;
+                }
+                @media only screen and (min-device-width: 2561px)  {
+                    font-size: 3rem;
                 }
                 }   
             }
@@ -68,7 +94,7 @@
                 text-align: center;
                 img {
                     grid-area: image;
-                    width: 30%;
+                    width: 20%;
                     margin: 1.5rem auto;
                     align-items: center;
                     justify-content: center;
@@ -79,10 +105,13 @@
                         width: 35%;
                     }
                     @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px)  {
-                        width: 25%;
+                        width: 35%;
                     }
                     @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
-                        width: 25%;
+                        width: 35%;
+                    }
+                    @media only screen and (min-device-width: 2561px)  {
+                        width: 45%;
                     }
                 }
             }
@@ -114,8 +143,14 @@
                         letter-spacing: 0.12rem;
                     }
                     @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
-                        width: 50rem;
-                        font-size: 1.35rem;
+                        width: 75rem;
+                        font-size: 2rem;
+                        letter-spacing: 0.25rem;
+                    }
+                    
+                    @media only screen and (min-device-width: 2561px)  {
+                        width: 100rem;
+                        font-size: 2.5rem;
                         letter-spacing: 0.25rem;
                     }
                 }

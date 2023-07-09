@@ -1,6 +1,9 @@
 #mainMywork {
     grid-area: main;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
     h3 {
         color:white;
         font-size: 1.2rem;
@@ -16,11 +19,11 @@
         @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px)  {
             font-size: 1.8rem;
         }
-        @media only screen and (min-device-width: 1441px) and (max-device-width: 2047px)  {
-            font-size: 1.8rem;
+        @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
+            font-size: 2.5rem;
         }
-        @media only screen and (min-device-width: 2048px)  and (max-device-width: 2870px) {
-            font-size: 2rem;
+        @media only screen and (min-device-width: 2561px) {
+            font-size: 4rem;
         }
     }
     .gallery {
@@ -39,18 +42,22 @@
         @media only screen and (min-device-width: 769px) and (max-device-width: 1024px)  {
             flex-direction: row;
             max-width: 50vw;
+            gap: 1.5rem;
         }
         @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px)  {
             flex-direction: row;
             max-width: 45vw;
+            gap: 2rem;
         }
-        @media only screen and (min-device-width: 1441px) and (max-device-width: 2047px)  {
+        @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
             flex-direction: row;
             max-width: 35vw;
+            gap: 2.5rem;
         }
-        @media only screen and (min-device-width: 2048px)  and (max-device-width: 2870px) {
+        @media only screen and (min-device-width: 2561px) {
             flex-direction: row;
-            max-width: 45vw;
+            max-width: 35vw;
+            gap: 5rem;
         }
         figure {
             background-color:black;
@@ -77,9 +84,13 @@
                     width: 16rem;
                 }
                 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
-                    font-size: 1.45rem;
+                    font-size: 2rem;
                     width: 23rem;
-                } 
+                }
+                @media only screen and (min-device-width: 2561px) {
+                    font-size: 2rem;
+                    width: 23rem;
+                }
             }
             img {
                 margin-top: 1rem;
@@ -106,6 +117,14 @@
                     width: 22.75rem;
                     height: 22.75rem;
                 } 
+                @media only screen and (min-device-width: 2561px) {
+                    width: 30rem;
+                    height: 30rem;
+                    transition: width 1s;
+                    &:hover {
+                        width: 40rem;
+                    }
+                }
             }
         }
     }

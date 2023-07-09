@@ -5,11 +5,11 @@
     color: variables.$p_color;
     width: 100vw;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
     margin: -4rem auto;
     p {
         font-size: 1.05rem;
@@ -27,8 +27,8 @@
             font-size: 1.20rem;
             width: 38%;
         }
-        @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
-            font-size: 1.75rem;
+        @media only screen and (min-device-width: 1441px) {
+            font-size: 2rem;
             width: 75%;
         }
     }
@@ -40,14 +40,8 @@
         @media only screen and (min-device-width: 576px) and (max-device-width: 768px)  {
             width: 45vw;
         }
-        @media only screen and (min-device-width: 769px) and (max-device-width: 1024px)  {
+        @media only screen and (min-device-width: 769px) {
             width: 38vw;
-        }
-        @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px)  {
-            width: 30vw;
-        }
-        @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
-            width: 15vw;
         }
         fieldset {
             border: none;
@@ -66,8 +60,8 @@
                 @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px)  {
                     font-size: 1.10rem;
                 }
-                @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
-                    font-size: 1.20rem;
+                @media only screen and (min-device-width: 1441px) {
+                    font-size: 2rem;
                 }
             }
         }
@@ -77,6 +71,7 @@
         input[type="submit"] {
             font-family: 'Audiowide', cursive;
             width: 25%;
+            font-size: 1rem;
             padding: 1rem 1rem;
             background-color: rgba(black, 0.5);
             color: orange;
@@ -95,6 +90,9 @@
             animation-iteration-count: 1;
             animation-direction: normal;
             animation-fill-mode: none;
+            @media only screen and (min-device-width: 1441px) {
+                font-size: 2rem;
+            }
             @keyframes bounce-in-zoomin {
                 
             0% {

@@ -80,10 +80,30 @@ html {
   width: 100vw;
   text-align: center;
 }
+@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
+  #header .whereToStartMessage .message {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-device-width: 2561px) {
+  #header .whereToStartMessage .message {
+    font-size: 3rem;
+  }
+}
 #header .whereToStartMessage .arrow {
   width: 100vw;
   text-align: center;
   font-size: 2rem;
+}
+@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
+  #header .whereToStartMessage .arrow {
+    font-size: 4rem;
+  }
+}
+@media only screen and (min-device-width: 2561px) {
+  #header .whereToStartMessage .arrow {
+    font-size: 6rem;
+  }
 }
 #header input[type=checkbox] {
   display: none;
@@ -92,16 +112,28 @@ html {
   cursor: pointer;
 }
 #header .lbl-toggle #Logo {
-  height: 3.5rem;
+  height: 3.25rem;
   line-height: 3.5rem;
   font-size: 4rem;
   font-weight: 900;
   width: 100VW;
   text-align: center;
+  margin-bottom: 1rem;
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
   #header .lbl-toggle #Logo {
-    font-size: 4.5rem;
+    font-size: 6rem;
+    margin-top: 1rem;
+    height: 5rem;
+    line-height: 5rem;
+  }
+}
+@media only screen and (min-device-width: 2561px) {
+  #header .lbl-toggle #Logo {
+    font-size: 10rem;
+    margin-top: 2rem;
+    height: 7.5rem;
+    line-height: 7.55rem;
   }
 }
 #header .lbl-toggle #Logo span {
@@ -140,8 +172,13 @@ html {
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
   #header .dropdown-content .content-inner li a {
-    font-size: 1.25rem;
+    font-size: 2rem;
     margin-left: -0.05rem;
+  }
+}
+@media only screen and (min-device-width: 2561px) {
+  #header .dropdown-content .content-inner li a {
+    font-size: 2.75rem;
   }
 }
 #header .dropdown-content .content-inner li a:link {
@@ -154,9 +191,9 @@ html {
   color: whitesmoke;
   font-size: 1.25rem;
 }
-@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
+@media only screen and (min-device-width: 1441px) {
   #header .dropdown-content .content-inner li a:hover {
-    font-size: 2rem;
+    font-size: 2.25rem;
   }
 }
 #header .dropdown-content .content-inner li a:active {
@@ -201,6 +238,7 @@ html {
 #mainIndex {
   grid-area: main;
   width: 100vw;
+  display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
@@ -221,17 +259,22 @@ html {
 }
 @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
   #mainIndex .proffession {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
   #mainIndex .proffession {
-    font-size: 2.75rem;
+    font-size: 2.5rem;
   }
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
   #mainIndex .proffession {
-    font-size: 4rem;
+    font-size: 5rem;
+  }
+}
+@media only screen and (min-device-width: 2561px) {
+  #mainIndex .proffession {
+    font-size: 10rem;
   }
 }
 #mainIndex p {
@@ -239,7 +282,8 @@ html {
   width: 22rem;
   color: rgb(236, 236, 236);
   text-align: center;
-  margin: 0 auto;
+  margin-top: 6rem;
+  padding: 2rem;
   font-size: 1rem;
   letter-spacing: 0.28rem;
 }
@@ -251,32 +295,52 @@ html {
 }
 @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
   #mainIndex p {
-    font-size: 1.3rem;
+    font-size: 1rem;
     width: 40%;
   }
 }
 @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
   #mainIndex p {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     width: 35%;
   }
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
   #mainIndex p {
-    font-size: 1.75rem;
+    font-size: 2.5rem;
     width: 30%;
+  }
+}
+@media only screen and (min-device-width: 2561px) {
+  #mainIndex p {
+    font-size: 3.5rem;
+    width: 30%;
+    margin-top: 15rem;
   }
 }
 
 #mainAboutme {
   grid-area: main;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+@media only screen and (min-device-width: 1441px) {
+  #mainAboutme {
+    margin-top: 15rem;
+  }
 }
 #mainAboutme #content {
-  width: 80%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  max-width: 1900px;
   height: auto;
-  margin: auto;
-  padding: 1.5rem 0;
+  margin: 0 auto;
+  padding: 0 4rem;
   background: rgba(0, 0, 0, 0.3);
 }
 #mainAboutme #content .growingWord, #mainAboutme #content .touch {
@@ -294,27 +358,19 @@ html {
   color: white;
   letter-spacing: 0.2rem;
   font-size: 1rem;
-  width: 75vw;
-  margin: 1rem auto;
-}
-@media only screen and (min-device-width: 426px) and (max-device-width: 768px) {
-  #mainAboutme #content #textoAboutme p {
-    font-size: 0.95rem;
-  }
-}
-@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-  #mainAboutme #content #textoAboutme p {
-    font-size: 1rem;
-  }
+  width: auto;
+  padding: 2rem;
 }
 @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
   #mainAboutme #content #textoAboutme p {
     font-size: 1.25rem;
   }
 }
-@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
+@media only screen and (min-device-width: 1441px) {
   #mainAboutme #content #textoAboutme p {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    width: 75%;
+    margin: 0 auto;
   }
 }
 #mainAboutme #content #javaFalse {
@@ -322,7 +378,7 @@ html {
   color: white;
   letter-spacing: 0.2rem;
   font-size: 1rem;
-  width: 75vw;
+  width: 70vw;
   margin: 1rem auto;
 }
 #mainAboutme #content #javaFalse .let {
@@ -337,15 +393,35 @@ html {
 #mainAboutme #content #javaFalse .alert {
   color: yellow;
 }
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
+  #mainAboutme #content #javaFalse {
+    font-size: 1.25rem;
+  }
+}
+@media only screen and (min-device-width: 1441px) {
+  #mainAboutme #content #javaFalse {
+    font-size: 2rem;
+    width: 45vw;
+  }
+}
 #mainAboutme #content .goodLuck {
   color: white;
   text-align: center;
   padding: 2rem;
+  font-size: 2rem;
+}
+@media only screen and (min-device-width: 1441px) {
+  #mainAboutme #content .goodLuck {
+    font-size: 4rem;
+  }
 }
 
 #mainMywork {
   grid-area: main;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
 }
 #mainMywork h3 {
   color: white;
@@ -369,14 +445,14 @@ html {
     font-size: 1.8rem;
   }
 }
-@media only screen and (min-device-width: 1441px) and (max-device-width: 2047px) {
+@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
   #mainMywork h3 {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
   }
 }
-@media only screen and (min-device-width: 2048px) and (max-device-width: 2870px) {
+@media only screen and (min-device-width: 2561px) {
   #mainMywork h3 {
-    font-size: 2rem;
+    font-size: 4rem;
   }
 }
 #mainMywork .gallery {
@@ -399,24 +475,28 @@ html {
   #mainMywork .gallery {
     flex-direction: row;
     max-width: 50vw;
+    gap: 1.5rem;
   }
 }
 @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
   #mainMywork .gallery {
     flex-direction: row;
     max-width: 45vw;
+    gap: 2rem;
   }
 }
-@media only screen and (min-device-width: 1441px) and (max-device-width: 2047px) {
+@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
   #mainMywork .gallery {
     flex-direction: row;
     max-width: 35vw;
+    gap: 2.5rem;
   }
 }
-@media only screen and (min-device-width: 2048px) and (max-device-width: 2870px) {
+@media only screen and (min-device-width: 2561px) {
   #mainMywork .gallery {
     flex-direction: row;
-    max-width: 45vw;
+    max-width: 35vw;
+    gap: 5rem;
   }
 }
 #mainMywork .gallery figure {
@@ -453,7 +533,13 @@ html {
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
   #mainMywork .gallery figure figcaption {
-    font-size: 1.45rem;
+    font-size: 2rem;
+    width: 23rem;
+  }
+}
+@media only screen and (min-device-width: 2561px) {
+  #mainMywork .gallery figure figcaption {
+    font-size: 2rem;
     width: 23rem;
   }
 }
@@ -491,9 +577,22 @@ html {
     height: 22.75rem;
   }
 }
+@media only screen and (min-device-width: 2561px) {
+  #mainMywork .gallery figure img {
+    width: 30rem;
+    height: 30rem;
+    transition: width 1s;
+  }
+  #mainMywork .gallery figure img:hover {
+    width: 40rem;
+  }
+}
 
 #mainSkills {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  justify-content: center;
   margin: 1rem auto;
 }
 #mainSkills #gridContainer .row1, #mainSkills #gridContainer .row2, #mainSkills #gridContainer .row3, #mainSkills #gridContainer .row4, #mainSkills #gridContainer .row5, #mainSkills #gridContainer .row6 {
@@ -508,21 +607,31 @@ html {
 @media only screen and (min-device-width: 576px) and (max-device-width: 768px) {
   #mainSkills #gridContainer .row1, #mainSkills #gridContainer .row2, #mainSkills #gridContainer .row3, #mainSkills #gridContainer .row4, #mainSkills #gridContainer .row5, #mainSkills #gridContainer .row6 {
     grid-template-areas: "skill image description";
+    width: 75%;
   }
 }
 @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
   #mainSkills #gridContainer .row1, #mainSkills #gridContainer .row2, #mainSkills #gridContainer .row3, #mainSkills #gridContainer .row4, #mainSkills #gridContainer .row5, #mainSkills #gridContainer .row6 {
     grid-template-areas: "skill image description";
+    width: 75%;
   }
 }
 @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
   #mainSkills #gridContainer .row1, #mainSkills #gridContainer .row2, #mainSkills #gridContainer .row3, #mainSkills #gridContainer .row4, #mainSkills #gridContainer .row5, #mainSkills #gridContainer .row6 {
     grid-template-areas: "skill image description";
+    width: 65%;
   }
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
   #mainSkills #gridContainer .row1, #mainSkills #gridContainer .row2, #mainSkills #gridContainer .row3, #mainSkills #gridContainer .row4, #mainSkills #gridContainer .row5, #mainSkills #gridContainer .row6 {
     grid-template-areas: "skill image description";
+    width: 65%;
+  }
+}
+@media only screen and (min-device-width: 2561px) {
+  #mainSkills #gridContainer .row1, #mainSkills #gridContainer .row2, #mainSkills #gridContainer .row3, #mainSkills #gridContainer .row4, #mainSkills #gridContainer .row5, #mainSkills #gridContainer .row6 {
+    grid-template-areas: "skill image description";
+    width: 65%;
   }
 }
 #mainSkills #gridContainer .row1 .skillNameContainer, #mainSkills #gridContainer .row2 .skillNameContainer, #mainSkills #gridContainer .row3 .skillNameContainer, #mainSkills #gridContainer .row4 .skillNameContainer, #mainSkills #gridContainer .row5 .skillNameContainer, #mainSkills #gridContainer .row6 .skillNameContainer {
@@ -531,6 +640,29 @@ html {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+@media only screen and (min-device-width: 576px) and (max-device-width: 1024px) {
+  #mainSkills #gridContainer .row1 .skillNameContainer, #mainSkills #gridContainer .row2 .skillNameContainer, #mainSkills #gridContainer .row3 .skillNameContainer, #mainSkills #gridContainer .row4 .skillNameContainer, #mainSkills #gridContainer .row5 .skillNameContainer, #mainSkills #gridContainer .row6 .skillNameContainer {
+    width: 10rem;
+  }
+}
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
+  #mainSkills #gridContainer .row1 .skillNameContainer, #mainSkills #gridContainer .row2 .skillNameContainer, #mainSkills #gridContainer .row3 .skillNameContainer, #mainSkills #gridContainer .row4 .skillNameContainer, #mainSkills #gridContainer .row5 .skillNameContainer, #mainSkills #gridContainer .row6 .skillNameContainer {
+    width: 15rem;
+    justify-content: left;
+  }
+}
+@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
+  #mainSkills #gridContainer .row1 .skillNameContainer, #mainSkills #gridContainer .row2 .skillNameContainer, #mainSkills #gridContainer .row3 .skillNameContainer, #mainSkills #gridContainer .row4 .skillNameContainer, #mainSkills #gridContainer .row5 .skillNameContainer, #mainSkills #gridContainer .row6 .skillNameContainer {
+    width: 20rem;
+    justify-content: left;
+  }
+}
+@media only screen and (min-device-width: 2561px) {
+  #mainSkills #gridContainer .row1 .skillNameContainer, #mainSkills #gridContainer .row2 .skillNameContainer, #mainSkills #gridContainer .row3 .skillNameContainer, #mainSkills #gridContainer .row4 .skillNameContainer, #mainSkills #gridContainer .row5 .skillNameContainer, #mainSkills #gridContainer .row6 .skillNameContainer {
+    width: 30rem;
+    justify-content: left;
+  }
 }
 #mainSkills #gridContainer .row1 .skillNameContainer h3, #mainSkills #gridContainer .row2 .skillNameContainer h3, #mainSkills #gridContainer .row3 .skillNameContainer h3, #mainSkills #gridContainer .row4 .skillNameContainer h3, #mainSkills #gridContainer .row5 .skillNameContainer h3, #mainSkills #gridContainer .row6 .skillNameContainer h3 {
   grid-area: skill;
@@ -554,7 +686,12 @@ html {
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
   #mainSkills #gridContainer .row1 .skillNameContainer h3, #mainSkills #gridContainer .row2 .skillNameContainer h3, #mainSkills #gridContainer .row3 .skillNameContainer h3, #mainSkills #gridContainer .row4 .skillNameContainer h3, #mainSkills #gridContainer .row5 .skillNameContainer h3, #mainSkills #gridContainer .row6 .skillNameContainer h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-device-width: 2561px) {
+  #mainSkills #gridContainer .row1 .skillNameContainer h3, #mainSkills #gridContainer .row2 .skillNameContainer h3, #mainSkills #gridContainer .row3 .skillNameContainer h3, #mainSkills #gridContainer .row4 .skillNameContainer h3, #mainSkills #gridContainer .row5 .skillNameContainer h3, #mainSkills #gridContainer .row6 .skillNameContainer h3 {
+    font-size: 3rem;
   }
 }
 #mainSkills #gridContainer .row1 .imageSkillContainer, #mainSkills #gridContainer .row2 .imageSkillContainer, #mainSkills #gridContainer .row3 .imageSkillContainer, #mainSkills #gridContainer .row4 .imageSkillContainer, #mainSkills #gridContainer .row5 .imageSkillContainer, #mainSkills #gridContainer .row6 .imageSkillContainer {
@@ -565,7 +702,7 @@ html {
 }
 #mainSkills #gridContainer .row1 .imageSkillContainer img, #mainSkills #gridContainer .row2 .imageSkillContainer img, #mainSkills #gridContainer .row3 .imageSkillContainer img, #mainSkills #gridContainer .row4 .imageSkillContainer img, #mainSkills #gridContainer .row5 .imageSkillContainer img, #mainSkills #gridContainer .row6 .imageSkillContainer img {
   grid-area: image;
-  width: 30%;
+  width: 20%;
   margin: 1.5rem auto;
   align-items: center;
   justify-content: center;
@@ -582,12 +719,17 @@ html {
 }
 @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
   #mainSkills #gridContainer .row1 .imageSkillContainer img, #mainSkills #gridContainer .row2 .imageSkillContainer img, #mainSkills #gridContainer .row3 .imageSkillContainer img, #mainSkills #gridContainer .row4 .imageSkillContainer img, #mainSkills #gridContainer .row5 .imageSkillContainer img, #mainSkills #gridContainer .row6 .imageSkillContainer img {
-    width: 25%;
+    width: 35%;
   }
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
   #mainSkills #gridContainer .row1 .imageSkillContainer img, #mainSkills #gridContainer .row2 .imageSkillContainer img, #mainSkills #gridContainer .row3 .imageSkillContainer img, #mainSkills #gridContainer .row4 .imageSkillContainer img, #mainSkills #gridContainer .row5 .imageSkillContainer img, #mainSkills #gridContainer .row6 .imageSkillContainer img {
-    width: 25%;
+    width: 35%;
+  }
+}
+@media only screen and (min-device-width: 2561px) {
+  #mainSkills #gridContainer .row1 .imageSkillContainer img, #mainSkills #gridContainer .row2 .imageSkillContainer img, #mainSkills #gridContainer .row3 .imageSkillContainer img, #mainSkills #gridContainer .row4 .imageSkillContainer img, #mainSkills #gridContainer .row5 .imageSkillContainer img, #mainSkills #gridContainer .row6 .imageSkillContainer img {
+    width: 45%;
   }
 }
 #mainSkills #gridContainer .row1 .skillDescriptionContainer, #mainSkills #gridContainer .row2 .skillDescriptionContainer, #mainSkills #gridContainer .row3 .skillDescriptionContainer, #mainSkills #gridContainer .row4 .skillDescriptionContainer, #mainSkills #gridContainer .row5 .skillDescriptionContainer, #mainSkills #gridContainer .row6 .skillDescriptionContainer {
@@ -627,8 +769,15 @@ html {
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
   #mainSkills #gridContainer .row1 .skillDescriptionContainer p, #mainSkills #gridContainer .row2 .skillDescriptionContainer p, #mainSkills #gridContainer .row3 .skillDescriptionContainer p, #mainSkills #gridContainer .row4 .skillDescriptionContainer p, #mainSkills #gridContainer .row5 .skillDescriptionContainer p, #mainSkills #gridContainer .row6 .skillDescriptionContainer p {
-    width: 50rem;
-    font-size: 1.35rem;
+    width: 75rem;
+    font-size: 2rem;
+    letter-spacing: 0.25rem;
+  }
+}
+@media only screen and (min-device-width: 2561px) {
+  #mainSkills #gridContainer .row1 .skillDescriptionContainer p, #mainSkills #gridContainer .row2 .skillDescriptionContainer p, #mainSkills #gridContainer .row3 .skillDescriptionContainer p, #mainSkills #gridContainer .row4 .skillDescriptionContainer p, #mainSkills #gridContainer .row5 .skillDescriptionContainer p, #mainSkills #gridContainer .row6 .skillDescriptionContainer p {
+    width: 100rem;
+    font-size: 2.5rem;
     letter-spacing: 0.25rem;
   }
 }
@@ -638,11 +787,11 @@ html {
   color: white;
   width: 100vw;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
   margin: -4rem auto;
 }
 #mainContact p {
@@ -668,9 +817,9 @@ html {
     width: 38%;
   }
 }
-@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
+@media only screen and (min-device-width: 1441px) {
   #mainContact p {
-    font-size: 1.75rem;
+    font-size: 2rem;
     width: 75%;
   }
 }
@@ -685,19 +834,9 @@ html {
     width: 45vw;
   }
 }
-@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 769px) {
   #mainContact form {
     width: 38vw;
-  }
-}
-@media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
-  #mainContact form {
-    width: 30vw;
-  }
-}
-@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
-  #mainContact form {
-    width: 15vw;
   }
 }
 #mainContact form fieldset {
@@ -725,9 +864,9 @@ html {
     font-size: 1.1rem;
   }
 }
-@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
+@media only screen and (min-device-width: 1441px) {
   #mainContact form fieldset label {
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
 }
 #mainContact form fieldset:last-of-type {
@@ -736,6 +875,7 @@ html {
 #mainContact form input[type=submit] {
   font-family: "Audiowide", cursive;
   width: 25%;
+  font-size: 1rem;
   padding: 1rem 1rem;
   background-color: rgba(0, 0, 0, 0.5);
   color: orange;
@@ -754,6 +894,11 @@ html {
   animation-iteration-count: 1;
   animation-direction: normal;
   animation-fill-mode: none;
+}
+@media only screen and (min-device-width: 1441px) {
+  #mainContact form input[type=submit] {
+    font-size: 2rem;
+  }
 }
 @keyframes bounce-in-zoomin {
   0% {
@@ -824,14 +969,24 @@ html {
   margin-bottom: 1rem;
   padding-top: 4rem;
 }
-@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
+@media only screen and (min-device-width: 576px) and (max-device-width: 1024px) {
   #footer {
-    font-size: 1.25rem;
+    font-size: 1.2em;
   }
 }
-@media only screen and (min-device-width: 2560px) and (max-device-width: 2870px) {
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
   #footer {
-    font-size: 2rem;
+    font-size: 1.35em;
+  }
+}
+@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
+  #footer {
+    font-size: 2em;
+  }
+}
+@media only screen and (min-device-width: 2561px) {
+  #footer {
+    font-size: 3em;
   }
 }
 #footer .footerContainer {
@@ -853,27 +1008,47 @@ html {
 #footer .footerContainer .footerList li .instagram {
   width: 1.5rem;
 }
-@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
+@media only screen and (min-device-width: 576px) and (max-device-width: 1024px) {
   #footer .footerContainer .footerList li .instagram {
-    width: 2.5rem;
+    width: 2.25rem;
   }
 }
-@media only screen and (min-device-width: 2560px) and (max-device-width: 2870px) {
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
   #footer .footerContainer .footerList li .instagram {
-    width: 3.5rem;
+    width: 2.75rem;
+  }
+}
+@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
+  #footer .footerContainer .footerList li .instagram {
+    width: 4.25rem;
+  }
+}
+@media only screen and (min-device-width: 2561px) {
+  #footer .footerContainer .footerList li .instagram {
+    width: 6.25rem;
   }
 }
 #footer .footerContainer .footerList li .gitHub {
   width: 2.5rem;
 }
-@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
+@media only screen and (min-device-width: 576px) and (max-device-width: 1024px) {
   #footer .footerContainer .footerList li .gitHub {
-    width: 4rem;
+    width: 3.7rem;
   }
 }
-@media only screen and (min-device-width: 2560px) and (max-device-width: 2870px) {
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
   #footer .footerContainer .footerList li .gitHub {
-    width: 5.75rem;
+    width: 4.75rem;
+  }
+}
+@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
+  #footer .footerContainer .footerList li .gitHub {
+    width: 7.5rem;
+  }
+}
+@media only screen and (min-device-width: 2561px) {
+  #footer .footerContainer .footerList li .gitHub {
+    width: 10rem;
   }
 }
 #footer .nameSurname {
@@ -883,14 +1058,24 @@ html {
   text-shadow: 0 0 5px rgb(255, 196, 0), 0 0 10px rgb(255, 196, 0);
   animation: animate 1.5s linear infinite;
 }
-@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
+@media only screen and (min-device-width: 576px) and (max-device-width: 1024px) {
   #footer .nameSurname {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
-@media only screen and (min-device-width: 2560px) and (max-device-width: 2870px) {
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
   #footer .nameSurname {
-    font-size: 1.65rem;
+    font-size: 1.45rem;
+  }
+}
+@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
+  #footer .nameSurname {
+    font-size: 2.15rem;
+  }
+}
+@media only screen and (min-device-width: 2561px) {
+  #footer .nameSurname {
+    font-size: 3.25rem;
   }
 }
 @keyframes animate {

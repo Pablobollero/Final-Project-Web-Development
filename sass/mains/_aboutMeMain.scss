@@ -2,12 +2,23 @@
 
 #mainAboutme {
     grid-area: main;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-top: 2rem;
+    @media only screen and (min-device-width: 1441px) {
+        margin-top: 15rem;
+    }
     #content {
-        width: 80%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        max-width: 1900px;
         height: auto;
-        margin: auto;
-        padding: 1.5rem 0;
+        margin: 0 auto;
+        padding: 0 4rem;
         background: rgba(black, 0.3);
         .growingWord, .touch {
             color: orange;
@@ -23,20 +34,15 @@
                 color: variables.$p_color;
                 letter-spacing: 0.2rem;
                 font-size: 1rem;
-                width: 75vw;
-                margin: 1rem auto;
-                // background-color: rgba(black, 0.3);
-                @media only screen and (min-device-width: 426px) and (max-device-width: 768px)  {
-                    font-size: 0.95rem;
-                }
-                @media only screen and (min-device-width: 769px) and (max-device-width: 1024px)  {
-                    font-size: 1rem;
-                }
+                width: auto;
+                padding: 2rem;
                 @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px)  {
                     font-size: 1.25rem;
                 }
-                @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
-                    font-size: 1.50rem;
+                @media only screen and (min-device-width: 1441px) {
+                    font-size: 2rem;
+                    width: 75%;
+                    margin: 0 auto;
                 }
             }
         }
@@ -45,7 +51,7 @@
             color: variables.$p_color;
             letter-spacing: 0.2rem;
             font-size: 1rem;
-            width: 75vw;
+            width: 70vw;
             margin: 1rem auto;
             .let {
                 color: lightskyblue;
@@ -59,11 +65,22 @@
             .alert {
                 color: yellow;
             }
+            @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px)  {
+                font-size: 1.25rem;
+            }
+            @media only screen and (min-device-width: 1441px) {
+                font-size: 2rem;
+                width: 45vw;
+            }
         }
         .goodLuck {
             color: variables.$p_color;
             text-align: center;
             padding: 2rem;
+            font-size: 2rem;
+            @media only screen and (min-device-width: 1441px) {
+                font-size: 4rem;
+            }
         }
     }
 }

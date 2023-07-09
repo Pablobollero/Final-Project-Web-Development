@@ -1,6 +1,7 @@
 #mainIndex {
     grid-area: main;
     width: 100vw;
+    display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
@@ -16,13 +17,16 @@
             font-size: 2rem;
         }
         @media only screen and (min-device-width: 769px) and (max-device-width: 1024px)  {
-            font-size: 2.50rem;
+            font-size: 2rem;
         }
         @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px)  {
-            font-size: 2.75rem;
+            font-size: 2.5rem;
         }
         @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
-            font-size: 4rem;
+            font-size: 5rem;
+        }
+        @media only screen and (min-device-width: 2561px)  {
+            font-size: 10rem;
         }
     }
     p {
@@ -30,7 +34,8 @@
         width: 22rem;
         color:  rgb(236, 236, 236);
         text-align: center;
-        margin: 0 auto;
+        margin-top: 6rem;
+        padding: 2rem;
         font-size: 1rem;
         letter-spacing: 0.28rem;
         @media only screen and (min-device-width: 576px) and (max-device-width: 768px)  {
@@ -38,16 +43,21 @@
             width: 55%;
         }
         @media only screen and (min-device-width: 769px) and (max-device-width: 1024px)  {
-            font-size: 1.30rem;
+            font-size: 1rem;
             width: 40%;
         }
         @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px)  {
-            font-size: 1.20rem;
+            font-size: 1.25rem;
             width: 35%;
         }
         @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
-            font-size: 1.75rem;
+            font-size: 2.5rem;
             width: 30%;
+        }
+        @media only screen and (min-device-width: 2561px)  {
+            font-size: 3.5rem;
+            width: 30%;
+            margin-top: 15rem;
         }
     }
 }
