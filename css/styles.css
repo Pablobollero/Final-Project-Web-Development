@@ -19,17 +19,7 @@ html {
   width: 100vw;
   display: grid;
   grid-template-areas: "header" "main" "footer";
-  grid-template-rows: 30rem auto 20%;
-}
-@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
-  #bodyIndex {
-    grid-template-rows: 35rem auto 10%;
-  }
-}
-@media only screen and (min-device-width: 2561px) {
-  #bodyIndex {
-    grid-template-rows: 45rem auto 10%;
-  }
+  grid-template-rows: auto;
 }
 
 #bodyPages {
@@ -43,32 +33,7 @@ html {
   width: 100vw;
   display: grid;
   grid-template-areas: "header" "main" "footer";
-  grid-template-rows: 30rem auto 10%;
-}
-@media only screen and (min-device-width: 426px) and (max-device-width: 768px) {
-  #bodyPages {
-    grid-template-rows: 35rem auto 10%;
-  }
-}
-@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-  #bodyPages {
-    grid-template-rows: 40rem auto 10%;
-  }
-}
-@media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
-  #bodyPages {
-    grid-template-rows: 45rem auto 10%;
-  }
-}
-@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
-  #bodyPages {
-    grid-template-rows: 50rem auto 10%;
-  }
-}
-@media only screen and (min-device-width: 2561px) {
-  #bodyPages {
-    grid-template-rows: 55rem auto 10%;
-  }
+  grid-template-rows: auto;
 }
 
 #header {
@@ -340,7 +305,6 @@ html {
   text-align: center;
   justify-content: center;
   gap: 1rem;
-  margin: 7rem auto;
 }
 #mainIndex .proffession {
   display: flex;
@@ -350,7 +314,7 @@ html {
   font-size: 2.25rem;
   letter-spacing: 1.2rem;
 }
-@media only screen and (min-device-width: 576px) and (max-device-width: 768px) {
+@media only screen and (min-device-width: 425px) and (max-device-width: 768px) {
   #mainIndex .proffession {
     font-size: 2rem;
   }

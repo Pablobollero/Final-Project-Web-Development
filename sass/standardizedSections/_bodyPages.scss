@@ -12,20 +12,5 @@
     'header'
     'main'
     'footer';
-    grid-template-rows: 30rem auto 10%;
-    @media only screen and (min-device-width: 426px) and (max-device-width: 768px) {
-        grid-template-rows: 35rem auto 10%;
-    }
-    @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-        grid-template-rows: 40rem auto 10%;
-    }
-    @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
-        grid-template-rows: 45rem auto 10%;
-    }
-    @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
-        grid-template-rows: 50rem auto 10%;
-    }
-    @media only screen and (min-device-width: 2561px){
-        grid-template-rows: 55rem auto 10%;
-    }
+    grid-template-rows: auto;
 }
