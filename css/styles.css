@@ -19,7 +19,7 @@ html {
   width: 100vw;
   display: grid;
   grid-template-areas: "header" "main" "footer";
-  grid-template-rows: 30rem 60% 20%;
+  grid-template-rows: 30rem auto 20%;
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
   #bodyIndex {
@@ -127,7 +127,7 @@ html {
 }
 @media only screen and (min-device-width: 2561px) {
   #header .whereToStartMessage .message {
-    font-size: 3rem;
+    font-size: 2.25rem;
   }
 }
 #header .whereToStartMessage .arrow {
@@ -142,7 +142,7 @@ html {
 }
 @media only screen and (min-device-width: 2561px) {
   #header .whereToStartMessage .arrow {
-    font-size: 6rem;
+    font-size: 4rem;
   }
 }
 #header input[type=checkbox] {
@@ -190,7 +190,7 @@ html {
 }
 @media only screen and (min-device-width: 2561px) {
   #header .lbl-toggle #Logo {
-    font-size: 6.5rem;
+    font-size: 5.75rem;
     height: 7rem;
     line-height: 7rem;
   }
@@ -367,7 +367,12 @@ html {
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
   #mainIndex .proffession {
-    font-size: 4rem;
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-device-width: 2561px) {
+  #mainIndex .proffession {
+    font-size: 10rem;
   }
 }
 #mainIndex p {
@@ -401,6 +406,12 @@ html {
   #mainIndex p {
     font-size: 1.75rem;
     width: 30%;
+  }
+}
+@media only screen and (min-device-width: 2561px) {
+  #mainIndex p {
+    font-size: 3rem;
+    width: 15%;
   }
 }
 
