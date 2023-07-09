@@ -53,19 +53,34 @@ html {
   padding: 0.75rem;
   transition: width 1s;
 }
-@media only screen and (min-device-width: 426px) and (max-device-width: 1440px) {
+@media only screen and (min-device-width: 325px) and (max-device-width: 425px) {
   #header .homePageIconContainer #homePageIcon {
-    width: 3.5rem;
+    width: 8%;
+  }
+}
+@media only screen and (min-device-width: 426px) and (max-device-width: 768px) {
+  #header .homePageIconContainer #homePageIcon {
+    width: 4%;
+  }
+}
+@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  #header .homePageIconContainer #homePageIcon {
+    width: 4%;
+  }
+}
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
+  #header .homePageIconContainer #homePageIcon {
+    width: 3%;
   }
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
   #header .homePageIconContainer #homePageIcon {
-    width: 4rem;
+    width: 1.5%;
   }
 }
 @media only screen and (min-device-width: 2561px) {
   #header .homePageIconContainer #homePageIcon {
-    width: 1.65%;
+    width: 1%;
   }
 }
 #header .whereToStartMessage {
@@ -112,28 +127,47 @@ html {
   cursor: pointer;
 }
 #header .lbl-toggle #Logo {
-  height: 3.25rem;
-  line-height: 3.5rem;
+  height: 4rem;
+  line-height: 4rem;
   font-size: 4rem;
   font-weight: 900;
   width: 100VW;
   text-align: center;
   margin-bottom: 1rem;
 }
-@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
+@media only screen and (min-device-width: 425px) and (max-device-width: 768px) {
   #header .lbl-toggle #Logo {
-    font-size: 6rem;
-    margin-top: 1rem;
+    font-size: 4.25rem;
     height: 5rem;
     line-height: 5rem;
   }
 }
+@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  #header .lbl-toggle #Logo {
+    font-size: 4.5rem;
+    height: 5rem;
+    line-height: 5rem;
+  }
+}
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
+  #header .lbl-toggle #Logo {
+    font-size: 5rem;
+    height: 6rem;
+    line-height: 6rem;
+  }
+}
+@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
+  #header .lbl-toggle #Logo {
+    font-size: 5.5rem;
+    height: 6.5rem;
+    line-height: 6.5rem;
+  }
+}
 @media only screen and (min-device-width: 2561px) {
   #header .lbl-toggle #Logo {
-    font-size: 10rem;
-    margin-top: 2rem;
-    height: 7.5rem;
-    line-height: 7.55rem;
+    font-size: 8rem;
+    height: 7rem;
+    line-height: 7rem;
   }
 }
 #header .lbl-toggle #Logo span {
@@ -154,6 +188,7 @@ html {
   position: relative;
   overflow: hidden;
   transition: max-height 0.5s ease-in-out;
+  margin-top: -2rem;
 }
 #header .dropdown-content .content-inner {
   width: 100vw;
@@ -170,15 +205,29 @@ html {
   font-size: 1rem;
   transition: font-size 1s;
 }
+@media only screen and (min-device-width: 425px) and (max-device-width: 768px) {
+  #header .dropdown-content .content-inner li a {
+    font-size: 1.25rem;
+  }
+}
+@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  #header .dropdown-content .content-inner li a {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
+  #header .dropdown-content .content-inner li a {
+    font-size: 1.75rem;
+  }
+}
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
   #header .dropdown-content .content-inner li a {
     font-size: 2rem;
-    margin-left: -0.05rem;
   }
 }
 @media only screen and (min-device-width: 2561px) {
   #header .dropdown-content .content-inner li a {
-    font-size: 2.75rem;
+    font-size: 3rem;
   }
 }
 #header .dropdown-content .content-inner li a:link {
@@ -189,18 +238,38 @@ html {
 }
 #header .dropdown-content .content-inner li a:hover {
   color: whitesmoke;
-  font-size: 1.25rem;
+  font-size: -0.75rem;
 }
-@media only screen and (min-device-width: 1441px) {
+@media only screen and (min-device-width: 425px) and (max-device-width: 768px) {
   #header .dropdown-content .content-inner li a:hover {
-    font-size: 2.25rem;
+    font-size: 0.25rem;
+  }
+}
+@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  #header .dropdown-content .content-inner li a:hover {
+    font-size: 0.75rem;
+  }
+}
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
+  #header .dropdown-content .content-inner li a:hover {
+    font-size: 1.25rem;
+  }
+}
+@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
+  #header .dropdown-content .content-inner li a:hover {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-device-width: 2561px) {
+  #header .dropdown-content .content-inner li a:hover {
+    font-size: 2.5rem;
   }
 }
 #header .dropdown-content .content-inner li a:active {
   color: whitesmoke;
 }
 #header .toggle:checked + .lbl-toggle + .dropdown-content {
-  max-height: 16rem;
+  max-height: 20rem;
   overflow: hidden;
 }
 
@@ -327,9 +396,24 @@ html {
   justify-content: center;
   margin-top: 2rem;
 }
-@media only screen and (min-device-width: 1441px) {
+@media only screen and (min-device-width: 325px) and (max-device-width: 425px) {
   #mainAboutme {
-    margin-top: 15rem;
+    margin-top: 6rem;
+  }
+}
+@media only screen and (min-device-width: 426px) and (max-device-width: 1440px) {
+  #mainAboutme {
+    margin-top: 10Rem;
+  }
+}
+@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
+  #mainAboutme {
+    margin-top: 6rem;
+  }
+}
+@media only screen and (min-device-width: 2561px) {
+  #mainAboutme {
+    margin-top: -75rem;
   }
 }
 #mainAboutme #content {
@@ -361,15 +445,29 @@ html {
   width: auto;
   padding: 2rem;
 }
-@media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
+@media only screen and (min-device-width: 325px) and (max-device-width: 425px) {
   #mainAboutme #content #textoAboutme p {
     font-size: 1.25rem;
   }
 }
-@media only screen and (min-device-width: 1441px) {
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
   #mainAboutme #content #textoAboutme p {
-    font-size: 2rem;
+    font-size: 1.25rem;
+    width: 65%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
+  #mainAboutme #content #textoAboutme p {
+    font-size: 1.75rem;
     width: 75%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-device-width: 2561px) {
+  #mainAboutme #content #textoAboutme p {
+    font-size: 2.5rem;
+    width: 100%;
     margin: 0 auto;
   }
 }
@@ -396,12 +494,19 @@ html {
 @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
   #mainAboutme #content #javaFalse {
     font-size: 1.25rem;
+    width: 35vw;
   }
 }
-@media only screen and (min-device-width: 1441px) {
+@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
   #mainAboutme #content #javaFalse {
-    font-size: 2rem;
-    width: 45vw;
+    font-size: 1.75rem;
+    width: 25vw;
+  }
+}
+@media only screen and (min-device-width: 2561px) {
+  #mainAboutme #content #javaFalse {
+    font-size: 2.5rem;
+    width: 15vw;
   }
 }
 #mainAboutme #content .goodLuck {
@@ -410,9 +515,21 @@ html {
   padding: 2rem;
   font-size: 2rem;
 }
-@media only screen and (min-device-width: 1441px) {
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
   #mainAboutme #content .goodLuck {
-    font-size: 4rem;
+    margin-top: 5rem;
+  }
+}
+@media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
+  #mainAboutme #content .goodLuck {
+    font-size: 2.75rem;
+    margin-top: 5rem;
+  }
+}
+@media only screen and (min-device-width: 2561px) {
+  #mainAboutme #content .goodLuck {
+    font-size: 5rem;
+    margin-top: 10rem;
   }
 }
 

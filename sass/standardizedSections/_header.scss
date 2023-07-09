@@ -14,14 +14,23 @@
             margin-top: 1rem;
             padding: 0.75rem;            
             transition: width 1s;
-            @media only screen and (min-device-width: 426px) and (max-device-width: 1440px)  {
-                width: 3.5rem;
+            @media only screen and (min-device-width: 325px) and (max-device-width: 425px)  {
+                width: 8%;
+            }
+            @media only screen and (min-device-width: 426px) and (max-device-width: 768px)  {
+                width: 4%;
+            }
+            @media only screen and (min-device-width: 769px) and (max-device-width: 1024px)  {
+                width: 4%;
+            }
+            @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px)  {
+                width: 3%;
             }
             @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px){
-                width: 4rem;
+                width: 1.5%;
             }
             @media only screen and (min-device-width: 2561px){
-                width: 1.65%;
+                width: 1%;
             }
         }
     }
@@ -63,24 +72,37 @@
         cursor: pointer;
         // Expandable logo for menu
         #Logo {
-            height: 3.25rem;
-            line-height: 3.5rem;
+            height: 4rem;
+            line-height: 4rem;
             font-size: 4rem;
             font-weight: 900;
             width: 100VW;
             text-align: center;
             margin-bottom: 1rem;
-            @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px){
-                font-size: 6rem;
-                margin-top: 1rem;
+            @media only screen and (min-device-width: 425px) and (max-device-width: 768px) {
+                font-size: 4.25rem;
                 height: 5rem;
                 line-height: 5rem;
             }
-            @media only screen and (min-device-width: 2561px){
-                font-size: 10rem;
-                margin-top: 2rem;
-                height: 7.5rem;
-                line-height: 7.55rem;
+            @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+                font-size: 4.5rem;
+                height: 5rem;
+                line-height: 5rem;
+            }
+            @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
+                font-size: 5rem;
+                height: 6rem;
+                line-height: 6rem;
+            }
+            @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
+                font-size: 5.5rem;
+                height: 6.5rem;
+                line-height: 6.5rem;
+            }
+            @media only screen and (min-device-width: 2561px)  {
+                font-size: 8rem;
+                height: 7rem;
+                line-height: 7rem;
             }
             span {
                 display: inline-flex;
@@ -103,6 +125,7 @@
         position: relative;
         overflow: hidden;
         transition: max-height .50s ease-in-out;
+        margin-top: -2rem;
         .content-inner {
             width: 100vw;
             text-align: center;
@@ -115,12 +138,20 @@
                     letter-spacing: 0.5em;
                     font-size: 1rem;
                     transition: font-size 1s;
-                    @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px){
-                        font-size: 2rem;
-                        margin-left: -0.05rem;
+                    @media only screen and (min-device-width: 425px) and (max-device-width: 768px) {
+                        font-size: 1.25rem;
                     }
-                    @media only screen and (min-device-width: 2561px) {
-                        font-size: 2.75rem;
+                    @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+                        font-size: 1.5rem;
+                    }
+                    @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
+                        font-size: 1.75rem;
+                    }
+                    @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
+                        font-size: 2rem;
+                    }
+                    @media only screen and (min-device-width: 2561px)  {
+                        font-size: 3rem;
                     }
                     &:link {
                         color: whitesmoke;
@@ -130,9 +161,21 @@
                     }
                     &:hover {
                         color: whitesmoke;
-                        font-size: 1.25rem;
-                        @media only screen and (min-device-width: 1441px) {
-                            font-size: 2.25rem;
+                        font-size: -0.75rem;
+                        @media only screen and (min-device-width: 425px) and (max-device-width: 768px) {
+                            font-size: 0.25rem;
+                        }
+                        @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+                            font-size: 0.75rem;
+                        }
+                        @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
+                            font-size: 1.25rem;
+                        }
+                        @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px)  {
+                            font-size: 1.5rem;
+                        }
+                        @media only screen and (min-device-width: 2561px)  {
+                            font-size: 2.5rem;
                         }
                     }
                     &:active {
@@ -142,8 +185,9 @@
             }
         }
     }
+    //Dropdown content height
     .toggle:checked+.lbl-toggle+.dropdown-content {
-        max-height: 16rem;
+        max-height: 20rem;
         overflow: hidden;
     }
 }
